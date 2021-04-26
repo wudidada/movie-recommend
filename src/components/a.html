@@ -1,0 +1,4321 @@
+<!DOCTYPE html>
+<html data-n-head-ssr lang="en" data-n-head="lang">
+  <head data-n-head="">
+    <title data-n-head="true">Browse Movies, TV Shows and People</title>
+    <meta data-n-head="true" charset="utf-8" />
+    <meta
+      data-n-head="true"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta
+      data-n-head="true"
+      data-hid="description"
+      name="description"
+      content="Browse Movies, TV Shows and People"
+    />
+    <meta
+      data-n-head="true"
+      data-hid="author"
+      name="author"
+      content="Jason Ujma-Alvis"
+    />
+    <meta
+      data-n-head="true"
+      data-hid="og:locale"
+      property="og:locale"
+      content="en_GB"
+    />
+    <meta
+      data-n-head="true"
+      data-hid="og:title"
+      property="og:title"
+      content="Movies App"
+    />
+    <meta
+      data-n-head="true"
+      data-hid="og:description"
+      property="og:description"
+      content="Browse Movies, TV Shows and People"
+    />
+    <meta
+      data-n-head="true"
+      data-hid="og:type"
+      property="og:type"
+      content="website"
+    />
+    <meta
+      data-n-head="true"
+      data-hid="og:url"
+      property="og:url"
+      content="https://movies.jason.codes/"
+    />
+    <meta data-n-head="true" name="twitter:card" content="summary" />
+    <meta data-n-head="true" name="twitter:title" content="Movies" />
+    <meta
+      data-n-head="true"
+      name="twitter:description"
+      content="Browse Movies, TV Shows and People"
+    />
+    <meta data-n-head="true" name="twitter:site" content="@jasonujmaalvis" />
+    <meta data-n-head="true" name="twitter:creator" content="@jasonujmaalvis" />
+    <meta
+      data-n-head="true"
+      name="twitter:image"
+      content="https://movies.jason.codes/icon-medium.png"
+    />
+    <meta
+      data-n-head="true"
+      data-hid="mobile-web-app-capable"
+      name="mobile-web-app-capable"
+      content="yes"
+    />
+    <meta
+      data-n-head="true"
+      data-hid="apple-mobile-web-app-title"
+      name="apple-mobile-web-app-title"
+      content="Movies"
+    />
+    <meta
+      data-n-head="true"
+      data-hid="theme-color"
+      name="theme-color"
+      content="#2196f3"
+    />
+    <meta
+      data-n-head="true"
+      data-hid="og:site_name"
+      name="og:site_name"
+      property="og:site_name"
+      content="Movies"
+    />
+    <link
+      data-n-head="true"
+      rel="icon"
+      type="image/x-icon"
+      href="/favicon.ico"
+    />
+    <link
+      data-n-head="true"
+      rel="stylesheet"
+      href="//fonts.googleapis.com/css?family=Roboto:300,400,500"
+    />
+    <link
+      data-n-head="true"
+      rel="manifest"
+      href="/_nuxt/manifest.9b3645b2.json"
+    />
+    <link
+      data-n-head="true"
+      rel="shortcut icon"
+      href="/_nuxt/icons/icon_64.9E0p00p0cU0.png"
+    />
+    <link
+      data-n-head="true"
+      rel="apple-touch-icon"
+      href="/_nuxt/icons/icon_512.9E0p00p0cU0.png"
+      sizes="512x512"
+    />
+    <link rel="preload" href="/_nuxt/7bd6ba750f166d4d4752.js" as="script" />
+    <link rel="preload" href="/_nuxt/857b729cde3df87c5389.js" as="script" />
+    <link rel="preload" href="/_nuxt/0796b4f9a42a131d0b04.js" as="script" />
+    <link rel="preload" href="/_nuxt/374aec39be97b91b0f4e.js" as="script" />
+    <link rel="preload" href="/_nuxt/165fdd8a75ad53668bf5.js" as="script" />
+    <style
+      data-vue-ssr-id="296e0937:0 17cfdfa9:0 2f0466de:0 e73852f8:0 8270abd8:0 147630ae:0 1d5adef5:0"
+    >
+      /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+      html {
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+      }
+      body {
+        margin: 0;
+      }
+      h1 {
+        font-size: 2em;
+        margin: 0.67em 0;
+      }
+      hr {
+        box-sizing: content-box;
+        height: 0;
+        overflow: visible;
+      }
+      pre {
+        font-family: monospace, monospace;
+        font-size: 1em;
+      }
+      a {
+        background-color: transparent;
+      }
+      abbr[title] {
+        border-bottom: none;
+        text-decoration: underline;
+        -webkit-text-decoration: underline dotted;
+        text-decoration: underline dotted;
+      }
+      b,
+      strong {
+        font-weight: 500;
+      }
+      code,
+      kbd,
+      samp {
+        font-family: monospace, monospace;
+        font-size: 1em;
+      }
+      small {
+        font-size: 80%;
+      }
+      sub,
+      sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+      }
+      sub {
+        bottom: -0.25em;
+      }
+      sup {
+        top: -0.5em;
+      }
+      img {
+        border-style: none;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+      button,
+      input {
+        overflow: visible;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      [type="button"],
+      [type="reset"],
+      [type="submit"],
+      button {
+        -webkit-appearance: button;
+        cursor: pointer;
+      }
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner,
+      button::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+      [type="button"]:-moz-focusring,
+      [type="reset"]:-moz-focusring,
+      [type="submit"]:-moz-focusring,
+      button:-moz-focusring {
+        outline: 1px dotted ButtonText;
+      }
+      fieldset {
+        padding: 0.35em 0.75em 0.625em;
+      }
+      legend {
+        box-sizing: border-box;
+        color: inherit;
+        display: table;
+        max-width: 100%;
+        padding: 0;
+        white-space: normal;
+      }
+      progress {
+        vertical-align: baseline;
+      }
+      textarea {
+        overflow: auto;
+      }
+      [type="checkbox"],
+      [type="radio"] {
+        box-sizing: border-box;
+        padding: 0;
+      }
+      [type="number"]::-webkit-inner-spin-button,
+      [type="number"]::-webkit-outer-spin-button {
+        height: auto;
+      }
+      [type="search"] {
+        -webkit-appearance: textfield;
+        outline-offset: -2px;
+      }
+      [type="search"]::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+      ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit;
+      }
+      details {
+        display: block;
+      }
+      summary {
+        display: list-item;
+      }
+      [hidden],
+      template {
+        display: none;
+      }
+      *,
+      :after,
+      :before {
+        box-sizing: border-box;
+      }
+      html {
+        font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 62.5%;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.6;
+        color: #fff;
+        background: #141414;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      ::-moz-selection {
+        text-shadow: none;
+        background: #b3d4fc;
+      }
+      ::selection {
+        text-shadow: none;
+        background: #b3d4fc;
+      }
+      hr {
+        display: block;
+        height: 1px;
+        padding: 0;
+        margin: 1em 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+      }
+      audio,
+      canvas,
+      iframe,
+      img,
+      svg,
+      video {
+        vertical-align: middle;
+      }
+      fieldset {
+        padding: 0;
+        margin: 0;
+        border: 0;
+      }
+      textarea {
+        resize: vertical;
+      }
+      img {
+        display: inline-block;
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+        -ms-interpolation-mode: bicubic;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table td,
+      table th {
+        padding: 0.5rem 0;
+        text-align: left;
+      }
+      .page-enter-active,
+      .page-leave-active {
+        transition: all 0.25s ease-out;
+      }
+      .page-enter,
+      .page-leave-active {
+        opacity: 0;
+      }
+      .slidedown-enter-active,
+      .slidedown-leave-active {
+        transition: 0.3s;
+      }
+      .slidedown-enter,
+      .slidedown-leave-to {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+      }
+      .slidedown-enter-to,
+      .slidedown-leave {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+        font-weight: 400;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .button,
+      a.button {
+        display: inline-block;
+        padding: 1.5rem 2.5rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1;
+        color: #fff;
+        letter-spacing: 0.05em;
+        cursor: pointer;
+        background-color: #202124;
+        transition: all 0.2s;
+      }
+      .button:focus,
+      .button:hover,
+      a.button:focus,
+      a.button:hover {
+        background-color: #2f2f2f;
+      }
+      .button:disabled,
+      .button[disabled],
+      a.button:disabled,
+      a.button[disabled] {
+        color: #666;
+        cursor: default;
+        background-color: #000;
+      }
+      .button .icon,
+      a.button .icon {
+        margin-right: 1rem;
+      }
+      .button--icon {
+        display: inline-flex;
+        align-items: center;
+      }
+      select {
+        padding: 0.8rem 3.5rem 0.8rem 1.5rem;
+        font-size: 1.3rem;
+        color: #fff;
+        background: #202124
+          url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDMwIDYwIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI2ZmZiIgZD0iTTE1LjY3NiAzMy4wMzdsNS4xMDItNS4xMDMtLjcwNy0xLjA4Ni00LjQ5IDQuNDkyLTQuNDktNC40OTItLjcwMiAxLjA4NiA1LjEwMiA1LjEwMy4wNzUuMTE1LjAyLS4wMi4wMi4wMnoiLz48L3N2Zz4K)
+          no-repeat 100% 45%;
+        background-size: 30px 60px;
+        border-color: #202124;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 0;
+      }
+      select:disabled,
+      select[disabled] {
+        cursor: default;
+        opacity: 0.4;
+      }
+      select[multiple="multiple"] {
+        height: auto;
+        background-image: none;
+      }
+      select::-ms-expand {
+        display: none;
+      }
+      input {
+        font-size: 1.3rem;
+        border-radius: 0;
+      }
+      button {
+        text-align: center;
+        border: 0;
+        border-radius: 0;
+      }
+      @media (min-width: 1200px) {
+        body {
+          padding-left: 10rem;
+        }
+      }
+      .spacing {
+        margin: 2.5rem 1.5rem;
+      }
+      @media (min-width: 768px) {
+        .spacing {
+          margin: 2.5rem 4rem;
+        }
+      }
+      @media (min-width: 1200px) {
+        .spacing {
+          margin: 5rem;
+        }
+      }
+      .lazyload {
+        display: block;
+        min-height: 1px;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+      }
+      .lazyloaded .lazyload {
+        opacity: 1;
+      }
+      .nolist {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      .visuallyhidden {
+        position: absolute;
+        height: 1px;
+        width: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        border: 0;
+      }
+      .alert {
+        font-size: 1.4rem;
+        color: #fff;
+        background-color: #202124;
+      }
+      .alert p {
+        margin: 0;
+      }
+      .alert a {
+        color: #fff;
+        text-decoration: underline;
+      }
+      .alert button {
+        font-size: 1.4rem;
+      }
+      .alert + .alert {
+        border-top: 1px solid #000;
+      }
+      .alert__close {
+        display: flex;
+        flex: 0 0 auto;
+        align-items: center;
+        padding: 0 3rem;
+        background: none;
+        border-left: 1px solid #000;
+      }
+      .alert__btn--primary {
+        background-color: #2196f3;
+      }
+      .alert__btn--primary:focus,
+      .alert__btn--primary:hover {
+        background-color: #146fb7;
+      }
+      .alert__btn--secondary {
+        background-color: #000;
+      }
+      .alert__btn--secondary:focus,
+      .alert__btn--secondary:hover {
+        background-color: #2f2f2f;
+      }
+      .alert--default {
+        display: flex;
+      }
+      .alert--default p {
+        flex: 1;
+        padding: 1.5rem;
+      }
+      @media (min-width: 768px) {
+        .alert--default p {
+          padding: 1.5rem 2rem;
+        }
+      }
+      .alert--alt {
+        padding: 1.5rem;
+      }
+      @media (min-width: 768px) {
+        .alert--alt {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1.5rem 2rem;
+        }
+      }
+      @media (min-width: 768px) {
+        .alert--alt p {
+          margin-right: 1rem;
+        }
+      }
+      .alert--alt div {
+        flex-shrink: 0;
+      }
+      .alert--alt .alert__btn {
+        margin: 1.5rem 1rem 0 0;
+      }
+      @media (min-width: 768px) {
+        .alert--alt .alert__btn {
+          flex-shrink: 0;
+          margin: 0 0 0 1rem;
+        }
+      }
+      .listing {
+        margin: 2.5rem 1.5rem;
+      }
+      @media (min-width: 640px) {
+        .listing {
+          margin: 3rem 1.5rem;
+        }
+      }
+      @media (min-width: 1200px) {
+        .listing {
+          margin: 5rem;
+        }
+      }
+      .listing__head {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 1.5rem;
+      }
+      @media (min-width: 1200px) {
+        .listing__head {
+          margin-bottom: 2rem;
+        }
+      }
+      .listing__title {
+        font-size: 1.8rem;
+        letter-spacing: 0.4px;
+      }
+      @media (min-width: 1200px) {
+        .listing__title {
+          font-size: 2.4rem;
+        }
+      }
+      .listing__explore {
+        margin-left: 1rem;
+        font-size: 1.2rem;
+        color: #2196f3;
+        letter-spacing: 0.4px;
+      }
+      @media (min-width: 1200px) {
+        .listing__explore {
+          font-size: 1.4rem;
+        }
+      }
+      .listing__explore:focus,
+      .listing__explore:hover {
+        opacity: 0.8;
+      }
+      .listing__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -0.4rem;
+        margin-left: -0.4rem;
+      }
+      .listing__nav {
+        padding: 4rem 0;
+        text-align: center;
+      }
+      .listing--carousel {
+        margin-right: 0;
+        margin-left: 0;
+      }
+      .listing--carousel .listing__head {
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+      }
+      @media (min-width: 768px) {
+        .listing--carousel .listing__head {
+          margin-right: 4rem;
+          margin-left: 4rem;
+        }
+      }
+      @media (min-width: 1200px) {
+        .listing--carousel .listing__head {
+          margin-right: 5rem;
+          margin-left: 5rem;
+        }
+      }
+      .listing__items .card {
+        width: 33.3333333%;
+        padding: 0 0.4rem;
+      }
+      @media (min-width: 640px) {
+        .listing__items .card {
+          width: 25%;
+        }
+      }
+      @media (min-width: 1024px) {
+        .listing__items .card {
+          width: 20%;
+        }
+      }
+      @media (min-width: 1500px) {
+        .listing__items .card {
+          width: 16.6666667%;
+        }
+      }
+      @media (min-width: 1800px) {
+        .listing__items .card {
+          width: 14.2857143%;
+        }
+      }
+      @media (min-width: 2500px) {
+        .listing__items .card {
+          width: 12.5%;
+        }
+      }
+      .carousel {
+        position: relative;
+        overflow: hidden;
+      }
+      .carousel__nav {
+        position: absolute;
+        top: 0;
+        bottom: 48px;
+        z-index: 1;
+        width: 30px;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        outline: 0;
+        transition: opacity 0.25s ease, background-color 0.25s ease;
+      }
+      @media (max-width: 767px) {
+        .carousel__nav {
+          display: none;
+        }
+      }
+      @media (min-width: 768px) {
+        .carousel__nav {
+          width: 40px;
+        }
+      }
+      @media (min-width: 1200px) {
+        .carousel__nav {
+          bottom: 60px;
+          width: 50px;
+        }
+      }
+      .carousel__nav:focus,
+      .carousel__nav:hover {
+        background: rgba(0, 0, 0, 0.75);
+      }
+      .carousel__nav[disabled] {
+        cursor: default;
+        opacity: 0;
+      }
+      .carousel__nav--left {
+        left: 0;
+      }
+      .carousel__nav--right {
+        right: 0;
+      }
+      .carousel__items {
+        width: 100%;
+        overflow: hidden;
+        overflow-x: scroll;
+        line-height: 0;
+        white-space: nowrap;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: none;
+        -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 15px;
+      }
+      @media (min-width: 768px) {
+        .carousel__items {
+          scroll-padding: 40px;
+        }
+      }
+      @media (min-width: 1200px) {
+        .carousel__items {
+          scroll-padding: 50px;
+        }
+      }
+      .carousel__items::-webkit-scrollbar {
+        display: none;
+      }
+      .carousel__items .card {
+        display: inline-block;
+        width: calc(33.333% - 7.33326px);
+        padding-right: 8px;
+        margin: 0;
+        white-space: normal;
+        vertical-align: top;
+        scroll-snap-align: start;
+      }
+      @media (min-width: 640px) {
+        .carousel__items .card {
+          width: calc(25% - 18px);
+        }
+      }
+      @media (min-width: 1024px) {
+        .carousel__items .card {
+          width: calc(20% - 14.4px);
+        }
+      }
+      @media (min-width: 1200px) {
+        .carousel__items .card {
+          width: calc(20% - 18.4px);
+        }
+      }
+      @media (min-width: 1500px) {
+        .carousel__items .card {
+          width: calc(16.667% - 15.33364px);
+        }
+      }
+      @media (min-width: 1800px) {
+        .carousel__items .card {
+          width: calc(14.286% - 13.14312px);
+        }
+      }
+      @media (min-width: 2500px) {
+        .carousel__items .card {
+          width: calc(12.5% - 11.5px);
+        }
+      }
+      .carousel__items .card:first-child {
+        margin-left: 15px;
+      }
+      @media (min-width: 768px) {
+        .carousel__items .card:first-child {
+          margin-left: 40px;
+        }
+      }
+      @media (min-width: 1200px) {
+        .carousel__items .card:first-child {
+          margin-left: 50px;
+        }
+      }
+      .carousel__items .card:last-child {
+        margin-right: 7px;
+      }
+      @media (min-width: 768px) {
+        .carousel__items .card:last-child {
+          margin-right: 32px;
+        }
+      }
+      @media (min-width: 1200px) {
+        .carousel__items .card:last-child {
+          margin-right: 42px;
+        }
+      }
+      .carousel__items .credits-item {
+        display: inline-block;
+        width: calc(33.333% - 7.33326px);
+        padding-right: 8px;
+        margin: 0;
+        white-space: normal;
+        vertical-align: top;
+        scroll-snap-align: start;
+      }
+      @media (min-width: 768px) {
+        .carousel__items .credits-item {
+          width: calc(25% - 18px);
+        }
+      }
+      @media (min-width: 930px) {
+        .carousel__items .credits-item {
+          width: calc(20% - 14.4px);
+        }
+      }
+      @media (min-width: 1130px) {
+        .carousel__items .credits-item {
+          width: calc(16.667% - 12.00024px);
+        }
+      }
+      @media (min-width: 1200px) {
+        .carousel__items .credits-item {
+          width: calc(16.667% - 15.33364px);
+        }
+      }
+      @media (min-width: 1450px) {
+        .carousel__items .credits-item {
+          width: calc(14.286% - 13.14312px);
+        }
+      }
+      .carousel__items .credits-item:first-child {
+        margin-left: 15px;
+      }
+      @media (min-width: 768px) {
+        .carousel__items .credits-item:first-child {
+          margin-left: 40px;
+        }
+      }
+      @media (min-width: 1200px) {
+        .carousel__items .credits-item:first-child {
+          margin-left: 50px;
+        }
+      }
+      .carousel__items .credits-item:last-child {
+        margin-right: 7px;
+      }
+      @media (min-width: 768px) {
+        .carousel__items .credits-item:last-child {
+          margin-right: 32px;
+        }
+      }
+      @media (min-width: 1200px) {
+        .carousel__items .credits-item:last-child {
+          margin-right: 42px;
+        }
+      }
+      .card {
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+      }
+      @media (min-width: 640px) {
+        .card {
+          margin-bottom: 2rem;
+        }
+      }
+      .card__img {
+        position: relative;
+        height: 0;
+        padding-top: 150.27%;
+        overflow: hidden;
+        background-color: #202124;
+        transition: -webkit-transform 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out,
+          -webkit-transform 0.3s ease-in-out;
+      }
+      .card__img img,
+      .card__img span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transform: scale(0.97);
+        transform: scale(0.97);
+      }
+      .card__img span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+      }
+      @media (min-width: 1200px) {
+        .card__img span {
+          font-size: 1.6rem;
+        }
+      }
+      .card__img.lazyloaded img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+      .card__link:focus .card__img,
+      .card__link:hover .card__img {
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+      }
+      .card__name {
+        margin-top: 1rem;
+        overflow: hidden;
+        font-size: 1.3rem;
+        text-overflow: ellipsis;
+        letter-spacing: 0.4px;
+        white-space: nowrap;
+      }
+      @media (min-width: 1200px) {
+        .card__name {
+          margin-bottom: 0.5rem;
+          font-size: 1.5rem;
+        }
+      }
+      .card__rating {
+        display: flex;
+        align-items: center;
+      }
+      .card__vote {
+        margin-left: 1rem;
+        font-size: 1.2rem;
+        color: #80868b;
+      }
+      @media (min-width: 1200px) {
+        .card__vote {
+          font-size: 1.4rem;
+        }
+      }
+      .card__stars {
+        width: 7.3rem;
+        height: 1.2rem;
+        background-image: url(/_nuxt/img/2f810a4.png);
+      }
+      .card__stars,
+      .card__stars > div {
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+      }
+      .card__stars > div {
+        height: 100%;
+        background-image: url(/_nuxt/img/cd8b62a.png);
+      }
+      @media (max-width: 639px) {
+        .card__name,
+        .card__rating {
+          display: none;
+        }
+      }
+      .nuxt-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        width: 0;
+        opacity: 1;
+        transition: width 0.1s, opacity 0.4s;
+        background-color: #2196f3;
+        z-index: 999999;
+      }
+      .nuxt-progress.nuxt-progress-notransition {
+        transition: none;
+      }
+      .nuxt-progress-failed {
+        background-color: red;
+      }
+      .nav_xbFMc {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 5;
+        height: 4.5rem;
+        background-color: #000;
+      }
+      @media (min-width: 1200px) {
+        .nav_xbFMc {
+          top: 0;
+          right: auto;
+          width: 10rem;
+          height: 100%;
+          border-right: 1px solid #202124;
+        }
+      }
+      .nav_xbFMc ul {
+        display: flex;
+        height: 100%;
+      }
+      @media (min-width: 1200px) {
+        .nav_xbFMc ul {
+          flex-direction: column;
+        }
+      }
+      .nav_xbFMc ul li {
+        flex: 1 1 auto;
+        height: 100%;
+      }
+      @media (min-width: 1200px) {
+        .nav_xbFMc ul li {
+          flex: 0 1 auto;
+          height: 10rem;
+        }
+      }
+      .nav_xbFMc button {
+        padding: 0;
+        margin: 0;
+        background: none;
+      }
+      .nav_xbFMc a,
+      .nav_xbFMc button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        outline: 0;
+        transition: all 0.2s;
+      }
+      .nav_xbFMc a:focus,
+      .nav_xbFMc a:hover,
+      .nav_xbFMc button:focus,
+      .nav_xbFMc button:hover {
+        opacity: 0.8;
+      }
+      a.nuxt-link-active[data-v-7b357a42]:focus,
+      a.nuxt-link-active[data-v-7b357a42]:hover {
+        opacity: 1;
+      }
+      a.nuxt-link-active svg g[data-v-7b357a42] {
+        stroke: #2196f3;
+      }
+      .hero_F8SLO {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 35rem;
+        color: #999;
+        background-color: #000;
+      }
+      @media (min-width: 640px) {
+        .hero_F8SLO {
+          height: 50rem;
+        }
+      }
+      @media (min-width: 1024px) {
+        .hero_F8SLO {
+          position: relative;
+          display: block;
+          height: 0;
+          padding-bottom: 40%;
+        }
+      }
+      .backdrop_2w6W_ {
+        position: relative;
+        display: flex;
+        flex: 1 1 auto;
+        min-height: 0;
+      }
+      @media (min-width: 1024px) {
+        .backdrop_2w6W_ {
+          position: absolute;
+          top: 0;
+          right: 0;
+          display: block;
+          width: 71.1%;
+          height: 100%;
+        }
+      }
+      .backdrop_2w6W_:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        content: "";
+        background-image: linear-gradient(
+          0deg,
+          #000 0,
+          rgba(0, 0, 0, 0.1) 50%,
+          rgba(0, 0, 0, 0.1)
+        );
+      }
+      @media (min-width: 1024px) {
+        .backdrop_2w6W_:after {
+          background-image: linear-gradient(
+            90deg,
+            #000 0,
+            transparent 50%,
+            transparent
+          );
+        }
+      }
+      .backdrop_2w6W_ > div {
+        width: 100%;
+      }
+      @media (min-width: 1024px) {
+        .backdrop_2w6W_ > div {
+          display: inline;
+        }
+      }
+      .play_AfXd1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        padding: 0;
+        margin: 0;
+        background: none;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      @media (min-width: 1024px) {
+        .play_AfXd1 {
+          display: none;
+        }
+      }
+      .image_183rJ {
+        display: inline-block;
+        max-width: none;
+        height: 100%;
+      }
+      @media (max-width: 1023px) {
+        .image_183rJ {
+          width: 100%;
+          -o-object-fit: cover;
+          object-fit: cover;
+        }
+      }
+      .pane_2lVvR {
+        padding: 0 1.5rem 1.5rem;
+      }
+      @media (min-width: 768px) {
+        .pane_2lVvR {
+          padding: 0 4rem 4rem;
+        }
+      }
+      @media (min-width: 1024px) {
+        .pane_2lVvR {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          z-index: 1;
+          display: flex;
+          align-items: center;
+          width: 55%;
+          height: 100%;
+          padding: 5rem 4rem;
+        }
+      }
+      @media (min-width: 1200px) {
+        .pane_2lVvR {
+          padding-right: 5rem;
+          padding-left: 5rem;
+        }
+      }
+      @media (min-width: 1400px) {
+        .pane_2lVvR {
+          width: 43%;
+        }
+      }
+      .name_zSTaZ {
+        margin: 0 0 1.4rem;
+        font-size: 2.8rem;
+        line-height: 1.1;
+        color: #fff;
+        letter-spacing: 0.4px;
+      }
+      @media (min-width: 768px) {
+        .name_zSTaZ {
+          margin-bottom: 1.8rem;
+        }
+      }
+      @media (min-width: 1200px) {
+        .name_zSTaZ {
+          font-size: 2.4vw;
+        }
+      }
+      .meta_2Epvl {
+        font-size: 1.4rem;
+      }
+      @media (min-width: 768px) {
+        .meta_2Epvl {
+          display: flex;
+        }
+      }
+      @media (min-width: 1650px) {
+        .meta_2Epvl {
+          font-size: 0.9vw;
+        }
+      }
+      .rating_3cANi {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.3rem;
+      }
+      @media (min-width: 768px) {
+        .rating_3cANi {
+          margin: 0 1.2rem 0 0;
+        }
+      }
+      .stars_2QVc_ {
+        width: 8.5rem;
+        height: 1.4rem;
+        margin-right: 1rem;
+        background-image: url(/_nuxt/img/2f810a4.png);
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+      }
+      @media (min-width: 768px) {
+        .stars_2QVc_ {
+          width: 10.3rem;
+          height: 1.7rem;
+        }
+      }
+      .stars_2QVc_ > div {
+        height: 100%;
+        background-image: url(/_nuxt/img/cd8b62a.png);
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+      }
+      .info_11VDX {
+        display: flex;
+        align-items: center;
+      }
+      .info_11VDX span {
+        margin-right: 0.9rem;
+      }
+      .desc_1w0B3 {
+        display: block;
+        margin-top: 2.5rem;
+        font-size: 1.5rem;
+        color: #fff;
+      }
+      @media (max-width: 767px) {
+        .desc_1w0B3 {
+          display: none;
+        }
+      }
+      @media (min-width: 1650px) {
+        .desc_1w0B3 {
+          font-size: 0.9vw;
+        }
+      }
+      .trailer_3TaRf {
+        margin-top: 3rem;
+      }
+      @media (max-width: 1023px) {
+        .trailer_3TaRf {
+          display: none;
+        }
+      }
+      @media (min-width: 1650px) {
+        .trailer_3TaRf {
+          font-size: 0.9vw;
+        }
+      }
+      .hero-enter-active,
+      .hero-leave-active {
+        transition: opacity 0.3s cubic-bezier(0.4, 0.25, 0.3, 1),
+          -webkit-transform 0.75s cubic-bezier(0.4, 0.25, 0.3, 1);
+        transition: transform 0.75s cubic-bezier(0.4, 0.25, 0.3, 1),
+          opacity 0.3s cubic-bezier(0.4, 0.25, 0.3, 1);
+        transition: transform 0.75s cubic-bezier(0.4, 0.25, 0.3, 1),
+          opacity 0.3s cubic-bezier(0.4, 0.25, 0.3, 1),
+          -webkit-transform 0.75s cubic-bezier(0.4, 0.25, 0.3, 1);
+      }
+      .hero-enter,
+      .hero-leave-to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 2rem, 0);
+        transform: translate3d(0, 2rem, 0);
+      }
+      .hero-enter-to,
+      .hero-leave {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+      }
+      .footer_263LM {
+        padding: 2rem 1.5rem 6.5rem;
+        color: #80868b;
+      }
+      @media (min-width: 768px) {
+        .footer_263LM {
+          padding-right: 4rem;
+          padding-left: 4rem;
+        }
+      }
+      @media (min-width: 1200px) {
+        .footer_263LM {
+          padding: 2rem 5rem;
+        }
+      }
+      .footer_263LM p {
+        margin: 0.3rem 0;
+        font-size: 1.4rem;
+      }
+      .footer_263LM a {
+        color: #80868b;
+        text-decoration: underline;
+      }
+      .footer_263LM ul {
+        display: flex;
+        margin: 2rem 0 0 -0.5rem;
+      }
+      .footer_263LM ul a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4.4rem;
+        height: 4.4rem;
+      }
+      .footer_263LM ul a svg {
+        transition: all 0.3s ease-in-out;
+      }
+      .footer_263LM ul a:focus svg,
+      .footer_263LM ul a:hover svg {
+        fill: #fff;
+      }
+    </style>
+  </head>
+  <body data-n-head="">
+    <div data-server-rendered="true" id="__nuxt">
+      <!---->
+      <div id="__layout">
+        <div>
+          <!---->
+          <!---->
+          <!---->
+          <nav class="nav_xbFMc" data-v-7b357a42>
+            <ul class="nolist" data-v-7b357a42>
+              <li data-v-7b357a42>
+                <a
+                  href="/"
+                  aria-label="Home"
+                  class="nuxt-link-exact-active nuxt-link-active"
+                  data-v-7b357a42
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    data-v-7b357a42
+                  >
+                    <g
+                      fill="none"
+                      stroke="#fff"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      stroke-linejoin="round"
+                      data-v-7b357a42
+                    >
+                      <path
+                        d="M8.5 23.2H1.3V9L12 .8 22.7 9v14.2h-7.2v-5c0-1.9-1.6-3.4-3.5-3.4s-3.5 1.5-3.5 3.4v5z"
+                        data-v-7b357a42
+                      ></path>
+                    </g></svg
+                ></a>
+              </li>
+              <li data-v-7b357a42>
+                <a href="/movie" aria-label="Movies" data-v-7b357a42
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    data-v-7b357a42
+                  >
+                    <g
+                      fill="none"
+                      stroke="#fff"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                      data-v-7b357a42
+                    >
+                      <path
+                        d="M3.2 12.8h19.6v9.5c0 .5-.4.9-1 .9H4.1c-.5 0-1-.4-1-.9v-9.5"
+                        data-v-7b357a42
+                      ></path>
+                      <path
+                        d="M3.3 13.1l-2-4.4c-.2-.5 0-1 .5-1.2L18 .8c.5-.2 1.1 0 1.3.5l1.8 4-17.5 7.3"
+                        data-v-7b357a42
+                      ></path>
+                      <path
+                        d="M15 2.1l-.9 6M8 4.7l-1.2 6.6"
+                        data-v-7b357a42
+                      ></path>
+                    </g></svg
+                ></a>
+              </li>
+              <li data-v-7b357a42>
+                <a href="/tv" aria-label="TV Shows" data-v-7b357a42
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    data-v-7b357a42
+                  >
+                    <g
+                      fill="none"
+                      stroke="#fff"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      data-v-7b357a42
+                    >
+                      <path
+                        d="M21.4 23H2.6c-.9 0-1.6-.7-1.6-1.6V8.9c0-.9.7-1.6 1.6-1.6h18.9c.8 0 1.5.7 1.5 1.6v12.6c0 .8-.7 1.5-1.6 1.5zM6.4 1L12 7M17.6 1L12 7"
+                        data-v-7b357a42
+                      ></path>
+                    </g></svg
+                ></a>
+              </li>
+              <li data-v-7b357a42>
+                <button
+                  type="button"
+                  aria-label="Search"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  class="search-toggle"
+                  data-v-7b357a42
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    data-v-7b357a42
+                  >
+                    <g
+                      fill="none"
+                      stroke="#fff"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      data-v-7b357a42
+                    >
+                      <path d="M16.4 16.7l6.3 6.5" data-v-7b357a42></path>
+                      <ellipse
+                        cx="10.5"
+                        cy="9.8"
+                        rx="9.2"
+                        ry="9.1"
+                        data-v-7b357a42
+                      ></ellipse>
+                    </g>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </nav>
+          <main class="main">
+            <div>
+              <div class="hero_F8SLO">
+                <div class="backdrop_2w6W_">
+                  <div>
+                    <button
+                      type="button"
+                      aria-label="Play Trailer"
+                      class="play_AfXd1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="55"
+                        height="55"
+                        viewBox="0 0 55 55"
+                      >
+                        <circle
+                          cx="27.5"
+                          cy="27.5"
+                          r="26.75"
+                          fill="none"
+                          stroke="#fff"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                        ></circle>
+                        <path
+                          fill="none"
+                          stroke="#fff"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="M20.97 40.81L40.64 27.5 20.97 14.19v26.62z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <img alt="Night in Paradise" class="lazyload image_183rJ" />
+                  </div>
+                </div>
+                <div class="pane_2lVvR">
+                  <div>
+                    <h1 class="name_zSTaZ">
+                      <a href="/movie/606523">
+                        Night in Paradise
+                      </a>
+                    </h1>
+                    <div class="meta_2Epvl">
+                      <div class="rating_3cANi">
+                        <div class="stars_2QVc_">
+                          <div style="width:74%;"></div>
+                        </div>
+                        <div>
+                          42 Reviews
+                        </div>
+                      </div>
+                      <div class="info_11VDX">
+                        <!---->
+                        <span>2020</span> <span>2h 11min</span>
+                        <span>Cert. 18</span>
+                      </div>
+                    </div>
+                    <div class="desc_1w0B3">
+                      A gangster tries to clean up his life to care for his sick
+                      sister and nephew. But someone targeting him accidentally
+                      kills them instead. In shock, he decides to take revenge.
+                    </div>
+                    <button
+                      type="button"
+                      class="button button--icon trailer_3TaRf"
+                    >
+                      <span class="icon"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15"
+                          height="15"
+                          viewBox="0 0 24 24"
+                          fill="#fff"
+                        >
+                          <path d="M3 22v-20l18 10-18 10z"></path></svg
+                      ></span>
+                      <span class="txt">Watch Trailer</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!---->
+            </div>
+            <div class="listing listing--carousel">
+              <div class="listing__head">
+                <h2 class="listing__title">
+                  Trending Movies
+                </h2>
+                <a href="/movie/category/trending" class="listing__explore"
+                  ><strong>Explore All</strong></a
+                >
+              </div>
+              <div class="carousel">
+                <button
+                  aria-label="Previous"
+                  type="button"
+                  disabled="disabled"
+                  class="carousel__nav carousel__nav--left"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="#fff"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-miterlimit="10"
+                      d="M17.9 23.2L6.1 12 17.9.8"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="carousel__items">
+                  <div class="card">
+                    <a href="/movie/399566" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Godzilla vs. Kong" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Godzilla vs. Kong
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:84%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.4
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/movie/791373" class="card__link"
+                      ><div class="card__img">
+                        <img
+                          alt="Zack Snyder's Justice League"
+                          class="lazyload"
+                        />
+                      </div>
+                      <h2 class="card__name">
+                        Zack Snyder's Justice League
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:86%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.6
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/movie/615678" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Thunder Force" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Thunder Force
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:59%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          5.9
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/movie/527774" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Raya and the Last Dragon" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Raya and the Last Dragon
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:83%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.3
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/movie/412656" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Chaos Walking" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Chaos Walking
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:75%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          7.5
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/movie/464052" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Wonder Woman 1984" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Wonder Woman 1984
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:68%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          6.8
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/movie/600354" class="card__link"
+                      ><div class="card__img">
+                        <img alt="The Father" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        The Father
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:83%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.3
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/movie/460465" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Mortal Kombat" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Mortal Kombat
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:78%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          7.8
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/movie/458576" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Monster Hunter" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Monster Hunter
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:71%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          7.1
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/movie/587807" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Tom &amp; Jerry" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Tom &amp; Jerry
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:73%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          7.3
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/movie/508442" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Soul" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Soul
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:83%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.3
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/movie/606523" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Night in Paradise" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Night in Paradise
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:74%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          7.4
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/movie/621954" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Concrete Cowboy" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Concrete Cowboy
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:67%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          6.7
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/movie/630004" class="card__link"
+                      ><div class="card__img">
+                        <img alt="The Vault" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        The Vault
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:70%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          7.0
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/movie/299534" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Avengers: Endgame" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Avengers: Endgame
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:83%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.3
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/movie/581734" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Nomadland" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Nomadland
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:76%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          7.6
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/movie/209112" class="card__link"
+                      ><div class="card__img">
+                        <img
+                          alt="Batman v Superman: Dawn of Justice"
+                          class="lazyload"
+                        />
+                      </div>
+                      <h2 class="card__name">
+                        Batman v Superman: Dawn of Justice
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:59%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          5.9
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/movie/529203" class="card__link"
+                      ><div class="card__img">
+                        <img alt="The Croods: A New Age" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        The Croods: A New Age
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:75%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          7.5
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/movie/660006" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Madame Claude" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Madame Claude
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:62%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          6.2
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/movie/484718" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Coming 2 America" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Coming 2 America
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:68%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          6.8
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/movie/category/trending" class="card__link"
+                      ><div class="card__img"><span>Explore All</span></div></a
+                    >
+                  </div>
+                </div>
+                <button
+                  aria-label="Next"
+                  type="button"
+                  class="carousel__nav carousel__nav--right"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="#fff"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-miterlimit="10"
+                      d="M6.1 23.2L17.9 12 6.1.8"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="listing listing--carousel">
+              <div class="listing__head">
+                <h2 class="listing__title">
+                  Trending TV Shows
+                </h2>
+                <a href="/tv/category/trending" class="listing__explore"
+                  ><strong>Explore All</strong></a
+                >
+              </div>
+              <div class="carousel">
+                <button
+                  aria-label="Previous"
+                  type="button"
+                  disabled="disabled"
+                  class="carousel__nav carousel__nav--left"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="#fff"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-miterlimit="10"
+                      d="M17.9 23.2L6.1 12 17.9.8"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="carousel__items">
+                  <div class="card">
+                    <a href="/tv/88396" class="card__link"
+                      ><div class="card__img">
+                        <img
+                          alt="The Falcon and the Winter Soldier"
+                          class="lazyload"
+                        />
+                      </div>
+                      <h2 class="card__name">
+                        The Falcon and the Winter Soldier
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:78%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          7.8
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/tv/69050" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Riverdale" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Riverdale
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:86%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.6
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/tv/80828" class="card__link"
+                      ><div class="card__img">
+                        <img alt="The Nevers" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        The Nevers
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:88%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.8
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/tv/1429" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Attack on Titan" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Attack on Titan
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:86%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.6
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/tv/85271" class="card__link"
+                      ><div class="card__img">
+                        <img alt="WandaVision" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        WandaVision
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:84%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.4
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/tv/1402" class="card__link"
+                      ><div class="card__img">
+                        <img alt="The Walking Dead" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        The Walking Dead
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:81%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.1
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/tv/95557" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Invincible" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Invincible
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:89%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.9
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/tv/120462" class="card__link"
+                      ><div class="card__img">
+                        <img alt="THEM" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        THEM
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:82%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.2
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/tv/98187" class="card__link"
+                      ><div class="card__img">
+                        <img alt="The Irregulars" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        The Irregulars
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:81%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.1
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/tv/1399" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Game of Thrones" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Game of Thrones
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:84%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.4
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/tv/60735" class="card__link"
+                      ><div class="card__img">
+                        <img alt="The Flash" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        The Flash
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:77%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          7.7
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/tv/37854" class="card__link"
+                      ><div class="card__img">
+                        <img alt="One Piece" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        One Piece
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:87%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.7
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/tv/1416" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Grey's Anatomy" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Grey's Anatomy
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:82%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.2
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/tv/62688" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Supergirl" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Supergirl
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:72%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          7.2
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/tv/65930" class="card__link"
+                      ><div class="card__img">
+                        <img alt="My Hero Academia" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        My Hero Academia
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:89%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.9
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/tv/71446" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Money Heist" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Money Heist
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:83%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.3
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/tv/114165" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Kung Fu" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Kung Fu
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:87%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.7
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/tv/93454" class="card__link"
+                      ><div class="card__img">
+                        <img alt="The Serpent" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        The Serpent
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:82%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.2
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/tv/118956" class="card__link"
+                      ><div class="card__img">
+                        <img alt="DOTA: Dragon's Blood" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        DOTA: Dragon's Blood
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:82%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.2
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/tv/90970" class="card__link"
+                      ><div class="card__img">
+                        <img alt="Made For Love" class="lazyload" />
+                      </div>
+                      <h2 class="card__name">
+                        Made For Love
+                      </h2>
+                      <div class="card__rating">
+                        <div class="card__stars">
+                          <div style="width:81%;"></div>
+                        </div>
+                        <div class="card__vote">
+                          8.1
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="/tv/category/trending" class="card__link"
+                      ><div class="card__img"><span>Explore All</span></div></a
+                    >
+                  </div>
+                </div>
+                <button
+                  aria-label="Next"
+                  type="button"
+                  class="carousel__nav carousel__nav--right"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="#fff"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-miterlimit="10"
+                      d="M6.1 23.2L17.9 12 6.1.8"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </main>
+          <footer class="footer_263LM">
+            <p>
+              © 2021 Jason Ujma-Alvis. All rights reserved.
+              <a
+                target="_blank"
+                href="https://jason.codes/cookie-policy"
+                rel="noopener"
+                >Cookie Policy</a
+              >.
+            </p>
+            <p>
+              Designed and built by me, data provided by
+              <a
+                target="_blank"
+                href="https://www.themoviedb.org/"
+                rel="noopener"
+                >TMDb</a
+              >.
+            </p>
+            <ul class="nolist">
+              <li>
+                <a
+                  href="https://twitter.com/jasonujmaalvis"
+                  target="_blank"
+                  aria-label="Link to Twitter account"
+                  rel="noopener"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="#585858"
+                  >
+                    <path
+                      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                    ></path></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/jasonujmaalvis"
+                  target="_blank"
+                  aria-label="Link to GitHub account"
+                  rel="noopener"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="#585858"
+                  >
+                    <path
+                      d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+                    ></path></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/jason-ujma-alvis"
+                  target="_blank"
+                  aria-label="Link to LinkedIn account"
+                  rel="noopener"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="#585858"
+                  >
+                    <path
+                      d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"
+                    ></path></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="/cdn-cgi/l/email-protection#fd9598919192bd979c8e9293d39e9299988e"
+                  aria-label="Link to Email"
+                  rel="noopener"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="#585858"
+                  >
+                    <path
+                      d="M0 3v18h24V3H0zm21.518 2L12 12.713 2.482 5h19.036zM2 19V7.183l10 8.104 10-8.104V19H2z"
+                    ></path></svg
+                ></a>
+              </li>
+            </ul>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script>
+      window.__NUXT__ = (function(
+        a,
+        b,
+        c,
+        d,
+        e,
+        f,
+        g,
+        h,
+        i,
+        j,
+        k,
+        l,
+        m,
+        n,
+        o,
+        p,
+        q,
+        r,
+        s,
+        t,
+        u,
+        v,
+        w,
+        x,
+        y,
+        z,
+        A,
+        B,
+        C,
+        D,
+        E,
+        F,
+        G,
+        H,
+        I,
+        J,
+        K,
+        L,
+        M,
+        N,
+        O,
+        P,
+        Q,
+        R,
+        S,
+        T,
+        U,
+        V,
+        W,
+        X,
+        Y,
+        Z,
+        _,
+        $,
+        aa,
+        ab,
+        ac,
+        ad,
+        ae,
+        af,
+        ag,
+        ah,
+        ai,
+        aj,
+        ak,
+        al,
+        am,
+        an,
+        ao,
+        ap,
+        aq,
+        ar,
+        as,
+        at,
+        au,
+        av,
+        aw,
+        ax,
+        ay,
+        az,
+        aA,
+        aB,
+        aC,
+        aD,
+        aE,
+        aF,
+        aG,
+        aH,
+        aI,
+        aJ,
+        aK,
+        aL,
+        aM,
+        aN,
+        aO,
+        aP,
+        aQ,
+        aR,
+        aS,
+        aT,
+        aU,
+        aV,
+        aW,
+        aX,
+        aY,
+        aZ,
+        a_,
+        a$,
+        ba,
+        bb,
+        bc,
+        bd,
+        be,
+        bf,
+        bg,
+        bh,
+        bi,
+        bj,
+        bk,
+        bl,
+        bm,
+        bn,
+        bo,
+        bp,
+        bq,
+        br,
+        bs,
+        bt,
+        bu,
+        bv,
+        bw,
+        bx,
+        by,
+        bz,
+        bA,
+        bB,
+        bC,
+        bD,
+        bE,
+        bF,
+        bG,
+        bH,
+        bI,
+        bJ,
+        bK,
+        bL,
+        bM,
+        bN,
+        bO,
+        bP,
+        bQ,
+        bR,
+        bS,
+        bT,
+        bU,
+        bV,
+        bW,
+        bX
+      ) {
+        return {
+          layout: "default",
+          data: [
+            {
+              trendingMovies: {
+                page: p,
+                results: [
+                  {
+                    original_language: b,
+                    original_title: bm,
+                    poster_path: "\u002FpgqgaUx1cJb5oZQQ5v0tNARCeBp.jpg",
+                    video: a,
+                    vote_average: _,
+                    overview:
+                      "In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages.",
+                    release_date: "2021-03-24",
+                    vote_count: 4307,
+                    adult: a,
+                    backdrop_path: "\u002FinJjDhCjfhh3RtrJWBmmDqeuSYC.jpg",
+                    title: bm,
+                    genre_ids: [m, L],
+                    id: 399566,
+                    popularity: 7618.712,
+                    media_type: h,
+                  },
+                  {
+                    genre_ids: [m, t, r, L],
+                    original_language: b,
+                    original_title: be,
+                    poster_path: "\u002FtnAuB8q5vv7Ax9UAEje5Xi4BXik.jpg",
+                    video: a,
+                    vote_average: P,
+                    vote_count: 4827,
+                    overview:
+                      "Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.",
+                    id: 791373,
+                    title: be,
+                    release_date: "2021-03-18",
+                    adult: a,
+                    backdrop_path: "\u002FpcDc2WJAYGJTTvRSEIpRZwM3Ola.jpg",
+                    popularity: 3581.318,
+                    media_type: h,
+                  },
+                  {
+                    title: bp,
+                    vote_average: ag,
+                    overview:
+                      "In a world where supervillains are commonplace, two estranged childhood best friends reunite after one devises a treatment that gives them powers to protect their city.",
+                    release_date: am,
+                    adult: a,
+                    backdrop_path: "\u002Fz7HLq35df6ZpRxdMAE0qE3Ge4SJ.jpg",
+                    vote_count: 226,
+                    genre_ids: [m, t, y, r],
+                    id: 615678,
+                    original_language: b,
+                    original_title: bp,
+                    poster_path: "\u002F279yOM4OQREL36B3SECnRxoB4MZ.jpg",
+                    video: a,
+                    popularity: 222.628,
+                    media_type: h,
+                  },
+                  {
+                    poster_path: "\u002FlPsD10PP4rgUGiGR4CCXA6iY0QQ.jpg",
+                    title: aS,
+                    video: a,
+                    vote_average: F,
+                    overview:
+                      "Long ago, in the fantasy world of Kumandra, humans and dragons lived together in harmony. But when an evil force threatened the land, the dragons sacrificed themselves to save humanity. Now, 500 years later, that same evil has returned and it’s up to a lone warrior, Raya, to track down the legendary last dragon to restore the fractured land and its divided people.",
+                    release_date: "2021-03-03",
+                    adult: a,
+                    backdrop_path: "\u002FhJuDvwzS0SPlsE6MNFOpznQltDZ.jpg",
+                    id: 527774,
+                    genre_ids: [u, t, r, H, m],
+                    vote_count: 2238,
+                    original_language: b,
+                    original_title: aS,
+                    popularity: 2112.937,
+                    media_type: h,
+                  },
+                  {
+                    original_language: b,
+                    original_title: ad,
+                    poster_path: "\u002F9kg73Mg8WJKlB9Y2SAJzeDKAnuB.jpg",
+                    title: ad,
+                    video: a,
+                    vote_average: ae,
+                    overview:
+                      "Two unlikely companions embark on a perilous adventure through the badlands of an unexplored planet as they try to escape a dangerous and disorienting reality, where all inner thoughts are seen and heard by everyone.",
+                    release_date: "2021-02-24",
+                    vote_count: 320,
+                    adult: a,
+                    backdrop_path: "\u002F5NxjLfs7Bi07bfZCRl9CCnUw7AA.jpg",
+                    id: 412656,
+                    genre_ids: [L, m, t, G],
+                    popularity: 2871.579,
+                    media_type: h,
+                  },
+                  {
+                    adult: a,
+                    backdrop_path: "\u002FsrYya1ZlI97Au4jUYAktDe3avyA.jpg",
+                    genre_ids: [r, m, t],
+                    id: 464052,
+                    original_language: b,
+                    original_title: ah,
+                    poster_path: "\u002F8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg",
+                    video: a,
+                    title: ah,
+                    overview:
+                      "A botched store robbery places Wonder Woman in a global battle against a powerful and mysterious ancient force that puts her powers in jeopardy.",
+                    release_date: "2020-12-16",
+                    vote_count: 4808,
+                    vote_average: aj,
+                    popularity: 1276.177,
+                    media_type: h,
+                  },
+                  {
+                    title: al,
+                    vote_average: F,
+                    overview:
+                      "A man refuses all assistance from his daughter as he ages and, as he tries to make sense of his changing circumstances, he begins to doubt his loved ones, his own mind and even the fabric of his reality.",
+                    release_date: "2021-02-26",
+                    adult: a,
+                    backdrop_path: "\u002Fh3weAFgg06GqchI2xDfufBgSFTj.jpg",
+                    vote_count: 269,
+                    genre_ids: [e],
+                    id: 600354,
+                    original_language: b,
+                    original_title: al,
+                    poster_path: "\u002FuxWXW1YYQENSv7OzHB4Hds0bK3b.jpg",
+                    video: a,
+                    popularity: 113.886,
+                    media_type: h,
+                  },
+                  {
+                    adult: a,
+                    backdrop_path: "\u002FaN4i0Ly2swA9lN2EdWGKcYYznWX.jpg",
+                    genre_ids: [r, m, t],
+                    id: 460465,
+                    original_language: b,
+                    original_title: ap,
+                    poster_path: "\u002F8yhtzsbBExY8mUct2GOk4LDDuGH.jpg",
+                    video: a,
+                    title: ap,
+                    overview:
+                      "Washed-up MMA fighter Cole Young, unaware of his heritage, and hunted by Emperor Shang Tsung's best warrior, Sub-Zero, seeks out and trains with Earth's greatest champions as he prepares to stand against the enemies of Outworld in a high stakes battle for the universe.",
+                    release_date: av,
+                    vote_count: ax,
+                    vote_average: az,
+                    popularity: 577.064,
+                    media_type: h,
+                  },
+                  {
+                    genre_ids: [r, m, t],
+                    original_language: b,
+                    original_title: aI,
+                    poster_path: "\u002F1UCOF11QCw8kcqvce8LKOO6pimh.jpg",
+                    video: a,
+                    vote_average: 7.1,
+                    vote_count: 1435,
+                    overview:
+                      "A portal transports Cpt. Artemis and an elite unit of soldiers to a strange world where powerful monsters rule with deadly ferocity. Faced with relentless danger, the team encounters a mysterious hunter who may be their only hope to find a way home.",
+                    id: 458576,
+                    title: aI,
+                    release_date: "2020-12-03",
+                    adult: a,
+                    backdrop_path: "\u002Fz8TvnEVRenMSTemxYZwLGqFofgF.jpg",
+                    popularity: 1329.927,
+                    media_type: h,
+                  },
+                  {
+                    original_language: b,
+                    original_title: aJ,
+                    poster_path: "\u002F6KErczPBROQty7QoIsaa6wJYXZi.jpg",
+                    title: aJ,
+                    video: a,
+                    vote_average: 7.3,
+                    overview:
+                      "Tom the cat and Jerry the mouse get kicked out of their home and relocate to a fancy New York hotel, where a scrappy employee named Kayla will lose her job if she can’t evict Jerry before a high-class wedding at the hotel. Her solution? Hiring Tom to get rid of the pesky mouse.",
+                    release_date: "2021-02-11",
+                    vote_count: 1178,
+                    adult: a,
+                    backdrop_path: "\u002Ffev8UFNFFYsD5q7AcYS8LyTzqwl.jpg",
+                    id: 587807,
+                    genre_ids: [y, H, u],
+                    popularity: 1374.65,
+                    media_type: h,
+                  },
+                  {
+                    genre_ids: [H, u, y, e, 10402, r],
+                    original_language: b,
+                    original_title: aK,
+                    poster_path: "\u002Fhm58Jw4Lw8OIeECIq5qyPYhAeRJ.jpg",
+                    video: a,
+                    vote_average: F,
+                    vote_count: 5662,
+                    overview:
+                      "Joe Gardner is a middle school teacher with a love for jazz music. After a successful gig at the Half Note Club, he suddenly gets into an accident that separates his soul from his body and is transported to the You Seminar, a center in which souls develop and gain passions before being transported to a newborn child. Joe must enlist help from the other souls-in-training, like 22, a soul who has spent eons in the You Seminar, in order to get back to Earth.",
+                    id: 508442,
+                    title: aK,
+                    release_date: "2020-12-25",
+                    adult: a,
+                    backdrop_path: "\u002Fkf456ZqeC45XTvo6W9pW5clYKfQ.jpg",
+                    popularity: 647.487,
+                    media_type: h,
+                  },
+                  {
+                    adult: a,
+                    backdrop_path: aM,
+                    genre_ids: [A, e, G],
+                    id: aO,
+                    original_language: R,
+                    original_title: aW,
+                    overview: a$,
+                    poster_path: O,
+                    release_date: bh,
+                    title: bj,
+                    video: a,
+                    vote_average: bk,
+                    vote_count: 40,
+                    popularity: bl,
+                    media_type: h,
+                  },
+                  {
+                    genre_ids: [e, Y],
+                    original_language: b,
+                    original_title: bn,
+                    poster_path: "\u002FqRW2poVt06WCVlIhrolWS5af4YV.jpg",
+                    video: a,
+                    vote_average: 6.7,
+                    vote_count: bo,
+                    overview:
+                      "Sent to live with his estranged father for the summer, a rebellious teen finds kinship in a tight-knit Philadelphia community of Black cowboys.",
+                    id: 621954,
+                    title: bn,
+                    release_date: "2020-09-10",
+                    adult: a,
+                    backdrop_path: "\u002Fzii6DDzh0AQMuf9rhAW2L9E1fOi.jpg",
+                    popularity: 235.382,
+                    media_type: h,
+                  },
+                  {
+                    genre_ids: [A, m, G],
+                    original_language: b,
+                    original_title: "Way Down",
+                    poster_path: "\u002FeSlazQmwqtlRIbmZ72xBGr0MEFH.jpg",
+                    video: a,
+                    vote_average: X,
+                    vote_count: 58,
+                    overview:
+                      "When an engineer learns of a mysterious, impenetrable fortress hidden under The Bank of Spain, he joins a crew of master thieves who plan to steal the legendary lost treasure locked inside while the whole country is distracted by Spain's World Cup Final. With thousands of soccer fans cheering in the streets, and security forces closing in, the crew have just minutes to pull off the score of a lifetime.",
+                    id: 630004,
+                    title: "The Vault",
+                    release_date: "2021-03-04",
+                    adult: a,
+                    backdrop_path: "\u002F2ZjxT6orLC4v3zff1QNkKL7S16.jpg",
+                    popularity: 86.052,
+                    media_type: h,
+                  },
+                  {
+                    adult: a,
+                    backdrop_path: "\u002F7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+                    genre_ids: [t, L, m],
+                    original_language: b,
+                    original_title: bt,
+                    poster_path: "\u002FulzhLuWrPK07P1YkdWQLZnQh1JL.jpg",
+                    video: a,
+                    vote_average: F,
+                    id: 299534,
+                    overview:
+                      "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+                    release_date: "2019-04-24",
+                    vote_count: 17827,
+                    title: bt,
+                    popularity: 287.865,
+                    media_type: h,
+                  },
+                  {
+                    adult: a,
+                    backdrop_path: "\u002FbjjZXrP8PEdFeJkKERc62xlarMI.jpg",
+                    genre_ids: [e, Y],
+                    id: 581734,
+                    original_language: b,
+                    original_title: bK,
+                    poster_path: "\u002F66GUmWpTHgAjyp4aBSXy63PZTiC.jpg",
+                    video: a,
+                    title: bK,
+                    overview:
+                      "A woman in her sixties embarks on a journey through the western United States after losing everything in the Great Recession, living as a van-dwelling modern-day nomad.",
+                    release_date: "2020-12-26",
+                    vote_count: 492,
+                    vote_average: 7.6,
+                    popularity: 251.661,
+                    media_type: h,
+                  },
+                  {
+                    adult: a,
+                    backdrop_path: "\u002FmX3WOJPBzzl4kj4xU5lL7qfD6C3.jpg",
+                    genre_ids: [m, t, r],
+                    id: 209112,
+                    original_language: b,
+                    original_title: bR,
+                    poster_path: "\u002F5UsK3grJvtQrtzEgqNlDljJW96w.jpg",
+                    video: a,
+                    title: bR,
+                    overview:
+                      "Fearing the actions of a god-like Super Hero left unchecked, Gotham City’s own formidable, forceful vigilante takes on Metropolis’s most revered, modern-day savior, while the world wrestles with what sort of hero it really needs. And with Batman and Superman at war with one another, a new threat quickly arises, putting mankind in greater danger than it’s ever known before.",
+                    release_date: "2016-03-23",
+                    vote_count: 14619,
+                    vote_average: ag,
+                    popularity: 101.971,
+                    media_type: h,
+                  },
+                  {
+                    adult: a,
+                    backdrop_path: "\u002FcjaOSjsjV6cl3uXdJqimktT880L.jpg",
+                    genre_ids: [H, r, u, y],
+                    id: 529203,
+                    original_language: b,
+                    original_title: bV,
+                    poster_path: "\u002FtbVZ3Sq88dZaCANlUcewQuHQOaE.jpg",
+                    video: a,
+                    title: bV,
+                    overview:
+                      "Searching for a safer habitat, the prehistoric Crood family discovers an idyllic, walled-in paradise that meets all of its needs. Unfortunately, they must also learn to live with the Bettermans -- a family that's a couple of steps above the Croods on the evolutionary ladder. As tensions between the new neighbors start to rise, a new threat soon propels both clans on an epic adventure that forces them to embrace their differences, draw strength from one another, and survive together.",
+                    release_date: "2020-11-25",
+                    vote_count: 1944,
+                    vote_average: ae,
+                    popularity: 820.304,
+                    media_type: h,
+                  },
+                  {
+                    backdrop_path: "\u002FnFfXSe79XsJXkkcXZxcQDwbkBm8.jpg",
+                    genre_ids: [A, e, 10749],
+                    original_language: "fr",
+                    original_title: bW,
+                    poster_path: "\u002F9miY5tHWmvVAft4gjqyaXyhLYHY.jpg",
+                    video: a,
+                    vote_average: 6.2,
+                    vote_count: 63,
+                    overview:
+                      "Paris, the late 1960s. Madame Claude is at the head of a flourishing business dedicated to prostitution that gives her power over both the french political and criminal worlds. But the end of her empire is closer than she thinks.",
+                    release_date: "2021-04-02",
+                    title: bW,
+                    id: 660006,
+                    adult: a,
+                    popularity: 230.265,
+                    media_type: h,
+                  },
+                  {
+                    vote_average: aj,
+                    overview:
+                      "Prince Akeem Joffer is set to become King of Zamunda when he discovers he has a son he never knew about in America – a street savvy Queens native named Lavelle. Honoring his royal father's dying wish to groom this son as the crown prince, Akeem and Semmi set off to America once again.",
+                    release_date: "2021-03-05",
+                    id: 484718,
+                    adult: a,
+                    backdrop_path: "\u002FvKzbIoHhk1z9DWYi8kyFe9Gg0HF.jpg",
+                    genre_ids: [y],
+                    vote_count: 1210,
+                    original_language: b,
+                    original_title: aa,
+                    poster_path: "\u002FnWBPLkqNApY5pgrJFMiI9joSI30.jpg",
+                    video: a,
+                    title: aa,
+                    popularity: 496.568,
+                    media_type: h,
+                  },
+                ],
+                total_pages: ab,
+                total_results: ac,
+              },
+              trendingTv: {
+                page: p,
+                results: [
+                  {
+                    backdrop_path: "\u002FJB17sIsU53NuWVUecOwrCA0CUp.jpg",
+                    first_air_date: "2021-03-19",
+                    genre_ids: [n, s, e, 10768],
+                    id: 88396,
+                    original_language: b,
+                    poster_path: "\u002F6kbAMLteGO8yyewYau6bJ683sw7.jpg",
+                    original_name: af,
+                    origin_country: [j],
+                    overview:
+                      "Following the events of “Avengers: Endgame”, the Falcon, Sam Wilson and the Winter Soldier, Bucky Barnes team up in a global adventure that tests their abilities, and their patience.",
+                    vote_count: 3585,
+                    vote_average: az,
+                    name: af,
+                    popularity: 4323.528,
+                    media_type: g,
+                  },
+                  {
+                    original_name: ai,
+                    origin_country: [j],
+                    backdrop_path: "\u002FqZtAf4Z1lazGQoYVXiHOrvLr5lI.jpg",
+                    id: 69050,
+                    vote_count: 10955,
+                    first_air_date: "2017-01-26",
+                    name: ai,
+                    vote_average: P,
+                    genre_ids: [I, e, A],
+                    poster_path: "\u002FwRbjVBdDo5qHAEOVYoMWpM58FSA.jpg",
+                    original_language: b,
+                    overview:
+                      "Set in the present, the series offers a bold, subversive take on Archie, Betty, Veronica and their friends, exploring the surreality of small-town life, the darkness and weirdness bubbling beneath Riverdale’s wholesome facade.",
+                    popularity: 1038.162,
+                    media_type: g,
+                  },
+                  {
+                    original_name: ak,
+                    origin_country: [j],
+                    genre_ids: [n, e],
+                    id: 80828,
+                    vote_count: 17,
+                    first_air_date: "2021-04-11",
+                    name: ak,
+                    vote_average: 8.8,
+                    original_language: b,
+                    overview:
+                      'In the last years of Victoria\'s reign, London is beset by the "Touched": people — mostly women — who suddenly manifest abnormal abilities, some charming, some very disturbing. Among them are Amalia True, a mysterious, quick-fisted widow, and Penance Adair, a brilliant young inventor. They are the champions of this new underclass, making a home for the Touched, while fighting the forces of… well, pretty much all the forces — to make room for those whom history as we know it has no place.',
+                    poster_path: "\u002FcZn3wN4zbEjH7Lv2xt2LxwT4TII.jpg",
+                    backdrop_path: "\u002F6x8vW5utEZahp6V3sSWxCTW0mHW.jpg",
+                    popularity: 169.026,
+                    media_type: g,
+                  },
+                  {
+                    backdrop_path: "\u002FyvKrycViRMQcIgdnjsM5JGNWU4Q.jpg",
+                    original_name: "進撃の巨人",
+                    genre_ids: [n, u, s],
+                    original_language: S,
+                    name: "Attack on Titan",
+                    poster_path: "\u002Faiy35Evcofzl7hASZZvsFgltHTX.jpg",
+                    first_air_date: "2013-04-07",
+                    overview:
+                      "Several hundred years ago, humans were nearly exterminated by Titans. Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food source. A small percentage of humanity survived by walling themselves in a city protected by extremely high walls, even taller than the biggest Titans. Flash forward to the present and the city has not seen a Titan in over 100 years. Teenage boy Eren and his foster sister Mikasa witness something horrific as the city walls are destroyed by a Colossal Titan that appears out of thin air. As the smaller Titans flood the city, the two kids watch in horror as their mother is eaten alive. Eren vows that he will murder every single Titan and take revenge for all of mankind.",
+                    vote_count: 3218,
+                    vote_average: P,
+                    origin_country: [N],
+                    id: 1429,
+                    popularity: 205.94,
+                    media_type: g,
+                  },
+                  {
+                    original_name: an,
+                    genre_ids: [n, I, e],
+                    original_language: b,
+                    poster_path: "\u002FglKDfE6btIRcVB5zrjspRIs4r52.jpg",
+                    vote_average: _,
+                    vote_count: 8075,
+                    overview:
+                      "Wanda Maximoff and Vision—two super-powered beings living idealized suburban lives—begin to suspect that everything is not as it seems.",
+                    id: 85271,
+                    backdrop_path: "\u002F57vVjteucIF3bGnZj6PmaoJRScw.jpg",
+                    name: an,
+                    origin_country: [j],
+                    first_air_date: "2021-01-15",
+                    popularity: 625.058,
+                    media_type: g,
+                  },
+                  {
+                    original_name: ao,
+                    origin_country: [j],
+                    genre_ids: [s, e, n],
+                    id: 1402,
+                    vote_count: 10511,
+                    first_air_date: "2010-10-31",
+                    name: ao,
+                    vote_average: $,
+                    original_language: b,
+                    overview:
+                      "Sheriff's deputy Rick Grimes awakens from a coma to find a post-apocalyptic world dominated by flesh-eating zombies. He sets out to find his family and encounters many other survivors along the way.",
+                    poster_path: "\u002FrqeYMLryjcawh2JeRpCVUDXYM5b.jpg",
+                    backdrop_path: "\u002Furo2Khv7JxlzXtLb8tCIbRhkb9E.jpg",
+                    popularity: 795.883,
+                    media_type: g,
+                  },
+                  {
+                    original_language: b,
+                    poster_path: "\u002FyDWJYRAwMNKbIYT8ZB33qy84uzO.jpg",
+                    name: aq,
+                    first_air_date: ar,
+                    overview:
+                      "Mark Grayson is a normal teenager except for the fact that his father is the most powerful superhero on the planet. Shortly after his seventeenth birthday, Mark begins to develop powers of his own and enters into his father’s tutelage.",
+                    vote_count: 566,
+                    vote_average: as,
+                    original_name: aq,
+                    origin_country: [j],
+                    backdrop_path: "\u002F6UH52Fmau8RPsMAbQbjwN3wJSCj.jpg",
+                    genre_ids: [u, s, e],
+                    id: 95557,
+                    popularity: 938.02,
+                    media_type: g,
+                  },
+                  {
+                    original_name: at,
+                    origin_country: [j],
+                    backdrop_path: "\u002FnRifrfdncHTRKUbk0MrAcuQmDFN.jpg",
+                    id: 120462,
+                    vote_count: au,
+                    first_air_date: am,
+                    name: at,
+                    vote_average: M,
+                    genre_ids: [e, I],
+                    poster_path: "\u002FbJw1VZ4ACt5TnAvJbHcprzgYc1E.jpg",
+                    original_language: b,
+                    overview:
+                      "A limited anthology series that explores terror in America.",
+                    popularity: 75.878,
+                    media_type: g,
+                  },
+                  {
+                    original_language: b,
+                    poster_path: "\u002FqN6HCKR3ZRqbpGBWFctVlSTKR2k.jpg",
+                    first_air_date: ar,
+                    name: aw,
+                    vote_average: $,
+                    overview:
+                      "In Victorian London, a gang of troubled street teens are manipulated into solving crimes for the sinister Doctor Watson and his mysterious business partner, the elusive Sherlock Holmes. As the crimes take on a horrifying supernatural edge and a dark power emerges, it'll be up to the Irregulars to come together to save not only London but the entire world.",
+                    original_name: aw,
+                    origin_country: [W],
+                    vote_count: 51,
+                    backdrop_path: "\u002F4sIjlFa2jn0SsWQVuTBEFgQy4eH.jpg",
+                    id: 98187,
+                    genre_ids: [e, I, n],
+                    popularity: 42.663,
+                    media_type: g,
+                  },
+                  {
+                    original_name: ay,
+                    genre_ids: [n, e, s],
+                    original_language: b,
+                    poster_path: "\u002Fu3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg",
+                    vote_average: _,
+                    vote_count: 13892,
+                    overview:
+                      "Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
+                    id: 1399,
+                    backdrop_path: "\u002FsuopoADq0k8YZr4dQXcU6pToj6s.jpg",
+                    name: ay,
+                    origin_country: [j],
+                    first_air_date: "2011-04-17",
+                    popularity: 469.293,
+                    media_type: g,
+                  },
+                  {
+                    backdrop_path: "\u002Fz59kJfcElR9eHO9rJbWp4qWMuee.jpg",
+                    first_air_date: "2014-10-07",
+                    genre_ids: [e, n],
+                    id: 60735,
+                    original_language: b,
+                    poster_path: "\u002FlJA2RCMfsWoskqlQhXPSLFQGXEJ.jpg",
+                    original_name: bX,
+                    origin_country: [j],
+                    overview:
+                      'After a particle accelerator causes a freak storm, CSI Investigator Barry Allen is struck by lightning and falls into a coma. Months later he awakens with the power of super speed, granting him the ability to move through Central City like an unseen guardian angel. Though initially excited by his newfound powers, Barry is shocked to discover he is not the only "meta-human" who was created in the wake of the accelerator explosion -- and not everyone is using their new powers for good. Barry partners with S.T.A.R. Labs and dedicates his life to protect the innocent. For now, only a few close friends and associates know that Barry is literally the fastest man alive, but it won\'t be long before the world learns what Barry Allen has become...The Flash.',
+                    vote_count: 7320,
+                    vote_average: 7.7,
+                    name: bX,
+                    popularity: 1276.118,
+                    media_type: g,
+                  },
+                  {
+                    original_language: S,
+                    poster_path: "\u002FoUPzuNw6e0NBbb121odI4ncCvRv.jpg",
+                    name: "One Piece",
+                    first_air_date: "1999-10-20",
+                    overview:
+                      'Years ago, the fearsome pirate king Gol D. Roger was executed, leaving a huge pile of treasure and the famous "One Piece" behind. Whoever claims the "One Piece" will be named the new pirate king. Monkey D. Luffy, a boy who consumed one of the "Devil\'s Fruits", has it in his head that he\'ll follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and he\'s surrounded by a bevy of skilled fighters and thieves to help him along the way. Monkey D. Luffy brings a bunch of his crew followed by, Roronoa Zoro, Nami, Usopp, Sanji, Tony-Tony Chopper, Nico Robin, Franky, and Brook. They will do anything to get the One Piece and become King of the Pirates!..',
+                    vote_count: 1922,
+                    vote_average: aA,
+                    original_name: "ワンピース",
+                    origin_country: [N],
+                    backdrop_path: "\u002F4Mt7WHox67uJ1yErwTBFcV8KWgG.jpg",
+                    genre_ids: [s, y, u],
+                    id: 37854,
+                    popularity: 54.861,
+                    media_type: g,
+                  },
+                  {
+                    original_name: aB,
+                    origin_country: [j],
+                    genre_ids: [e],
+                    id: 1416,
+                    vote_count: 5821,
+                    first_air_date: "2005-03-27",
+                    name: aB,
+                    vote_average: M,
+                    original_language: b,
+                    overview:
+                      "Follows the personal and professional lives of a group of doctors at Seattle’s Grey Sloan Memorial Hospital.",
+                    poster_path: "\u002FclnyhPqj1SNgpAdeSS6a6fwE6Bo.jpg",
+                    backdrop_path: "\u002Fedmk8xjGBsYVIf4QtLY9WMaMcXZ.jpg",
+                    popularity: 927.829,
+                    media_type: g,
+                  },
+                  {
+                    poster_path: "\u002Fzsaiq8ZclPuneuN7loLEbsh1ANJ.jpg",
+                    vote_average: 7.2,
+                    overview:
+                      "Twenty-four-year-old Kara Zor-El, who was taken in by the Danvers family when she was 13 after being sent away from Krypton, must learn to embrace her powers after previously hiding them. The Danvers teach her to be careful with her powers, until she has to reveal them during an unexpected disaster, setting her on her journey of heroism.",
+                    vote_count: 2944,
+                    origin_country: [j],
+                    first_air_date: "2015-10-26",
+                    original_name: aC,
+                    id: 62688,
+                    genre_ids: [e, n, s],
+                    name: aC,
+                    original_language: b,
+                    backdrop_path: "\u002Fjgb9xICHFX8wTGQ75js4uNbttQs.jpg",
+                    popularity: 204.124,
+                    media_type: g,
+                  },
+                  {
+                    backdrop_path: "\u002F3ILMlmC30QUnYkY3XEBOyJ82Dqu.jpg",
+                    first_air_date: "2016-04-03",
+                    genre_ids: [n, s, y, u],
+                    id: 65930,
+                    original_language: S,
+                    poster_path: "\u002FphuYuzqWW9ru8EA3HVjE9W2Rr3M.jpg",
+                    original_name: "僕のヒーローアカデミア",
+                    origin_country: [N],
+                    overview:
+                      "In a world where eighty percent of the population has some kind of super-powered Quirk, Izuku was unlucky enough to be born completely normal. But that won’t stop him from enrolling in a prestigious hero academy. Now, he’ll get his first taste of brutal rivalry from other schools as he braves the cutthroat, no-holds-barred provisional license exam.",
+                    vote_count: 2721,
+                    vote_average: as,
+                    name: "My Hero Academia",
+                    popularity: 75.458,
+                    media_type: g,
+                  },
+                  {
+                    backdrop_path: "\u002FxGexTKCJDkl12dTW4YCBDXWb1AD.jpg",
+                    first_air_date: "2017-05-02",
+                    genre_ids: [A, e],
+                    id: 71446,
+                    original_language: "es",
+                    poster_path: "\u002FMoEKaPFHABtA1xKoOteirGaHl1.jpg",
+                    original_name: "La casa de papel",
+                    origin_country: ["ES"],
+                    overview:
+                      "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose. Five months of seclusion - memorizing every step, every detail, every probability - culminate in eleven days locked up in the National Coinage and Stamp Factory of Spain, surrounded by police forces and with dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
+                    vote_count: 12714,
+                    vote_average: F,
+                    name: "Money Heist",
+                    popularity: 211.863,
+                    media_type: g,
+                  },
+                  {
+                    backdrop_path: "\u002F3bH7urg3TYXDq3OQzpxOgmX8Gu6.jpg",
+                    original_name: aD,
+                    genre_ids: [],
+                    original_language: b,
+                    name: aD,
+                    poster_path: "\u002FsJbzjaCnGdxlaRUCP7UmJGL1RVZ.jpg",
+                    first_air_date: av,
+                    overview:
+                      "A quarter-life crisis causes a young Chinese-American woman to drop out of college and go on a life-changing journey to an isolated monastery in China. But when she returns to find her hometown overrun with crime and corruption, she uses her martial arts skills and Shaolin values to protect her community and bring criminals to justice…all while searching for the assassin who killed her Shaolin mentor and is now targeting her.",
+                    vote_count: 26,
+                    vote_average: aA,
+                    origin_country: [j],
+                    id: 114165,
+                    popularity: 49.362,
+                    media_type: g,
+                  },
+                  {
+                    original_language: b,
+                    poster_path: "\u002FmZve7vS8S7nyYMIJ5rJrjzOGwAZ.jpg",
+                    name: aE,
+                    first_air_date: "2021-01-01",
+                    overview:
+                      "The remarkable story of how murderer Charles Sobhraj was captured. As the chief suspect in unsolved murders of young Western travellers across India, Thailand and Nepal’s ‘Hippie Trail’ in 1975 and 1976, Sobhraj had repeatedly slipped from the grasp of authorities worldwide to become Interpol's most wanted man, with arrest warrants on three different continents.",
+                    vote_count: 24,
+                    vote_average: M,
+                    original_name: aE,
+                    origin_country: [W],
+                    backdrop_path: "\u002F8OkqqkXS9PraWOYWLOrObfZEzC.jpg",
+                    genre_ids: [e, A],
+                    id: 93454,
+                    popularity: 62.546,
+                    media_type: g,
+                  },
+                  {
+                    backdrop_path: "\u002FifGVUbvl36CnY9mp4kquK8In1Rh.jpg",
+                    original_name: aF,
+                    genre_ids: [s, u, n],
+                    original_language: b,
+                    name: aF,
+                    poster_path: "\u002Fs1wP1YeQS9fgSHiXZ3yJb2ufB2D.jpg",
+                    first_air_date: "2021-03-25",
+                    overview:
+                      "After encounters with a dragon and a princess on her own mission, a Dragon Knight becomes embroiled in events larger than he could have ever imagined.",
+                    vote_count: 90,
+                    vote_average: M,
+                    origin_country: [j],
+                    id: 118956,
+                    popularity: 200.733,
+                    media_type: g,
+                  },
+                  {
+                    original_name: aG,
+                    origin_country: [j],
+                    genre_ids: [e, n, y],
+                    id: 90970,
+                    vote_count: aH,
+                    first_air_date: "2021-04-01",
+                    name: aG,
+                    vote_average: $,
+                    original_language: b,
+                    overview:
+                      "Thirty-something Hazel Green tries to escape a suffocating marriage — until she realizes her tech billionaire husband has implanted a revolutionary tracking device, the Made for Love, in her brain.",
+                    poster_path: "\u002FmfQiuyhFM4Yv98WWV0BTswKG8rM.jpg",
+                    backdrop_path: "\u002FxKH3vv9sRebArtFTsPJCgX84oEc.jpg",
+                    popularity: 49.727,
+                    media_type: g,
+                  },
+                ],
+                total_pages: ab,
+                total_results: ac,
+              },
+              featured: {
+                adult: a,
+                backdrop_path: aM,
+                belongs_to_collection: c,
+                budget: i,
+                genres: [
+                  { id: A, name: "Crime" },
+                  { id: e, name: "Drama" },
+                  { id: G, name: "Thriller" },
+                ],
+                homepage: k,
+                id: aO,
+                imdb_id: aL,
+                original_language: R,
+                original_title: aW,
+                overview: a$,
+                popularity: bl,
+                poster_path: O,
+                production_companies: [
+                  {
+                    id: 20064,
+                    logo_path: "\u002F2In7Heq6DuXDjOwPmJqHWkpohaL.png",
+                    name: "Next Entertainment World",
+                    origin_country: E,
+                  },
+                  {
+                    id: 10924,
+                    logo_path: "\u002FcedQL07aXp0xrw2tXZzEJlA6sAY.png",
+                    name: "Peppermint&company",
+                    origin_country: E,
+                  },
+                  {
+                    id: 128397,
+                    logo_path: c,
+                    name: "Goldmoon Film",
+                    origin_country: E,
+                  },
+                ],
+                production_countries: [{ iso_3166_1: E, name: "South Korea" }],
+                release_date: bh,
+                revenue: i,
+                runtime: 131,
+                spoken_languages: [
+                  {
+                    english_name: "Korean",
+                    iso_639_1: R,
+                    name: "한국어\u002F조선말",
+                  },
+                ],
+                status: "Released",
+                tagline: k,
+                title: bj,
+                video: a,
+                vote_average: bk,
+                vote_count: 42,
+                videos: {
+                  results: [
+                    {
+                      id: "6070597ce92d83006de53dcc",
+                      iso_639_1: b,
+                      iso_3166_1: j,
+                      key: "y9XGC6iwgwM",
+                      name: "Night in Paradise | Official Trailer | Netflix",
+                      site: "YouTube",
+                      size: 1080,
+                      type: "Trailer",
+                    },
+                  ],
+                },
+                credits: {
+                  cast: [
+                    {
+                      adult: a,
+                      gender: d,
+                      id: 1436248,
+                      known_for_department: l,
+                      name: aP,
+                      original_name: aP,
+                      popularity: 2.573,
+                      profile_path: "\u002FqtM416GlmNfNovj77I4hCL2kwec.jpg",
+                      cast_id: p,
+                      character: "Tae-gu",
+                      credit_id: "5cf4b1f80e0a2643c6cd83b1",
+                      order: i,
+                    },
+                    {
+                      adult: a,
+                      gender: p,
+                      id: 2067860,
+                      known_for_department: l,
+                      name: aQ,
+                      original_name: aQ,
+                      popularity: 24.776,
+                      profile_path: "\u002FyfWBjcdX0xPBpDOHXQTBnnxTqwQ.jpg",
+                      cast_id: d,
+                      character: "Jae-yeon",
+                      credit_id: "5cf4b2009251412422b88a21",
+                      order: p,
+                    },
+                    {
+                      adult: a,
+                      gender: d,
+                      id: 1248450,
+                      known_for_department: l,
+                      name: aR,
+                      original_name: aR,
+                      popularity: 6.34,
+                      profile_path: "\u002FuNt6tahnzTf5YZyQ83Spy7HIsK7.jpg",
+                      cast_id: o,
+                      character: "Mr. Ma",
+                      credit_id: "5d2d9e323434300016e97b38",
+                      order: d,
+                    },
+                    {
+                      adult: a,
+                      gender: d,
+                      id: 125734,
+                      known_for_department: l,
+                      name: aT,
+                      original_name: aT,
+                      popularity: 2.812,
+                      profile_path: "\u002FzQlPXY8vusE72nPQwanRACveDdV.jpg",
+                      cast_id: X,
+                      character: "Kuto",
+                      credit_id: "5f1ffe095c5cc80038c8b3cd",
+                      order: aU,
+                    },
+                    {
+                      adult: a,
+                      gender: d,
+                      id: 1872629,
+                      known_for_department: l,
+                      name: aV,
+                      original_name: aV,
+                      popularity: 4.435,
+                      profile_path: "\u002FgL5eN7UvYlseBD0rjdjgjiVKuQJ.jpg",
+                      cast_id: Z,
+                      character: "Mr. Yang",
+                      credit_id: "5d2d9e38a294f042db35dcde",
+                      order: o,
+                    },
+                    {
+                      adult: a,
+                      gender: d,
+                      id: 2273915,
+                      known_for_department: l,
+                      name: aX,
+                      original_name: aX,
+                      popularity: 0.848,
+                      profile_path: "\u002F6NS02ljZ2ssoFyxEM0Jp2SpWYC5.jpg",
+                      cast_id: 36,
+                      character: "Busan",
+                      credit_id: "60723fd38ddc340057cbd1de",
+                      order: Z,
+                    },
+                    {
+                      adult: a,
+                      gender: d,
+                      id: 1330448,
+                      known_for_department: l,
+                      name: aY,
+                      original_name: aY,
+                      popularity: 1.153,
+                      profile_path: "\u002F6ss1LSKyCmuqZnajU0NoAlHbIhg.jpg",
+                      cast_id: aZ,
+                      character: "Jin-seong",
+                      credit_id: "5e019c9c65686e001399ab49",
+                      order: aZ,
+                    },
+                    {
+                      adult: a,
+                      gender: d,
+                      id: 2101538,
+                      known_for_department: l,
+                      name: a_,
+                      original_name: a_,
+                      popularity: f,
+                      profile_path: "\u002F7oDDNlBZRUb9M7VxM5X1p1eXw4c.jpg",
+                      cast_id: Y,
+                      character: "Mr. Hwang",
+                      credit_id: "607240014d0e8d004303c0e0",
+                      order: X,
+                    },
+                    {
+                      adult: a,
+                      gender: i,
+                      id: 3046978,
+                      known_for_department: l,
+                      name: ba,
+                      original_name: ba,
+                      popularity: f,
+                      profile_path: c,
+                      cast_id: bo,
+                      character: "Ji-eun",
+                      credit_id: "607240592f79150056071f30",
+                      order: 8,
+                    },
+                    {
+                      adult: a,
+                      gender: p,
+                      id: 93996,
+                      known_for_department: l,
+                      name: bb,
+                      original_name: bb,
+                      popularity: 2.836,
+                      profile_path: "\u002Fu0hl8WSswFhKVaKwaMAERU0xUJk.jpg",
+                      cast_id: ax,
+                      character: "Jae-kyoung",
+                      credit_id: "60712ccda698cf00405551fb",
+                      order: aH,
+                    },
+                    {
+                      adult: a,
+                      gender: d,
+                      id: 138509,
+                      known_for_department: l,
+                      name: bc,
+                      original_name: bc,
+                      popularity: f,
+                      profile_path: "\u002FyR4BBkTT64VGrT1VTYlj73NcVpj.jpg",
+                      cast_id: m,
+                      character: "Mr. Park",
+                      credit_id: "606c8fe8e1ad790058e35120",
+                      order: au,
+                    },
+                    {
+                      adult: a,
+                      gender: d,
+                      id: 42799,
+                      known_for_department: l,
+                      name: bd,
+                      original_name: bd,
+                      popularity: 1.4,
+                      profile_path: "\u002Fu0MrMgGQ8Rc766CosgyYfyrZnxu.jpg",
+                      cast_id: 30,
+                      character: "Mr. Doh",
+                      credit_id: "60712d2c2dda89006ed31310",
+                      order: 11,
+                    },
+                  ],
+                  crew: [
+                    {
+                      adult: a,
+                      gender: d,
+                      id: 38017,
+                      known_for_department: D,
+                      name: bf,
+                      original_name: bf,
+                      popularity: f,
+                      profile_path: c,
+                      credit_id: "5f26c4c02ac49900356b5983",
+                      department: D,
+                      job: bg,
+                    },
+                    {
+                      adult: a,
+                      gender: d,
+                      id: 64337,
+                      known_for_department: v,
+                      name: bi,
+                      original_name: bi,
+                      popularity: f,
+                      profile_path: c,
+                      credit_id: "5f2019c14a22260036647bea",
+                      department: v,
+                      job: "Executive Producer",
+                    },
+                    {
+                      adult: a,
+                      gender: d,
+                      id: Q,
+                      known_for_department: J,
+                      name: C,
+                      original_name: C,
+                      popularity: T,
+                      profile_path: U,
+                      credit_id: "5cf4b21c9251416aebb91d39",
+                      department: J,
+                      job: "Director",
+                    },
+                    {
+                      adult: a,
+                      gender: d,
+                      id: Q,
+                      known_for_department: J,
+                      name: C,
+                      original_name: C,
+                      popularity: T,
+                      profile_path: U,
+                      credit_id: "5f2019cad9f4a60033241821",
+                      department: v,
+                      job: V,
+                    },
+                    {
+                      adult: a,
+                      gender: d,
+                      id: Q,
+                      known_for_department: J,
+                      name: C,
+                      original_name: C,
+                      popularity: T,
+                      profile_path: U,
+                      credit_id: "5f2019ea4a22260036647d20",
+                      department: "Writing",
+                      job: "Writer",
+                    },
+                    {
+                      adult: a,
+                      gender: d,
+                      id: 929598,
+                      known_for_department: K,
+                      name: bq,
+                      original_name: bq,
+                      popularity: f,
+                      profile_path: "\u002FjdQiBwQR9a93b6QCli79AR2gpNI.jpg",
+                      credit_id: "5f201a544a22260036648030",
+                      department: K,
+                      job: "Original Music Composer",
+                    },
+                    {
+                      adult: a,
+                      gender: d,
+                      id: 936834,
+                      known_for_department: br,
+                      name: bs,
+                      original_name: bs,
+                      popularity: f,
+                      profile_path: c,
+                      credit_id: "5f201a21d9f4a6003525bf87",
+                      department: br,
+                      job: "Director of Photography",
+                    },
+                    {
+                      adult: a,
+                      gender: p,
+                      id: 1294810,
+                      known_for_department: q,
+                      name: bu,
+                      original_name: bu,
+                      popularity: 0.833,
+                      profile_path: "\u002F4ALhS4iTYzLh3fLwg2svpVrrZBr.jpg",
+                      credit_id: "5f26c56b7c6de3003521c545",
+                      department: q,
+                      job: bv,
+                    },
+                    {
+                      adult: a,
+                      gender: i,
+                      id: 1306458,
+                      known_for_department: q,
+                      name: bw,
+                      original_name: bw,
+                      popularity: f,
+                      profile_path: c,
+                      credit_id: "5f26c5797c6de3003620d747",
+                      department: q,
+                      job: bv,
+                    },
+                    {
+                      adult: a,
+                      gender: d,
+                      id: 1308349,
+                      known_for_department: v,
+                      name: bx,
+                      original_name: bx,
+                      popularity: f,
+                      profile_path: c,
+                      credit_id: "6071c758ca835400408a3b6d",
+                      department: v,
+                      job: "Co-Producer",
+                    },
+                    {
+                      adult: a,
+                      gender: p,
+                      id: 1494068,
+                      known_for_department: v,
+                      name: by,
+                      original_name: by,
+                      popularity: f,
+                      profile_path: c,
+                      credit_id: "6071c782d4b9d90040d63ddd",
+                      department: v,
+                      job: V,
+                    },
+                    {
+                      adult: a,
+                      gender: d,
+                      id: 2078584,
+                      known_for_department: K,
+                      name: bz,
+                      original_name: bz,
+                      popularity: f,
+                      profile_path: c,
+                      credit_id: "5f26c4d9869e7500385fd646",
+                      department: K,
+                      job: "Sound Supervisor",
+                    },
+                    {
+                      adult: a,
+                      gender: i,
+                      id: 2100270,
+                      known_for_department: q,
+                      name: bA,
+                      original_name: bA,
+                      popularity: f,
+                      profile_path: c,
+                      credit_id: "602b2915761421003e258aa0",
+                      department: q,
+                      job: bB,
+                    },
+                    {
+                      adult: a,
+                      gender: i,
+                      id: 2121974,
+                      known_for_department: q,
+                      name: bC,
+                      original_name: bC,
+                      popularity: f,
+                      profile_path: c,
+                      credit_id: "5f26c557e263bb00350442e4",
+                      department: q,
+                      job: "Makeup & Hair",
+                    },
+                    {
+                      adult: a,
+                      gender: i,
+                      id: 2213287,
+                      known_for_department: bD,
+                      name: bE,
+                      original_name: bE,
+                      popularity: f,
+                      profile_path: c,
+                      credit_id: "6071c8212fe2fa005725901e",
+                      department: bD,
+                      job: "Martial Arts Choreographer",
+                    },
+                    {
+                      adult: a,
+                      gender: i,
+                      id: 2316095,
+                      known_for_department: v,
+                      name: bF,
+                      original_name: bF,
+                      popularity: f,
+                      profile_path: c,
+                      credit_id: "6071c774ca83540029f62c15",
+                      department: v,
+                      job: V,
+                    },
+                    {
+                      adult: a,
+                      gender: d,
+                      id: 2478788,
+                      known_for_department: q,
+                      name: bG,
+                      original_name: bG,
+                      popularity: 0.98,
+                      profile_path: c,
+                      credit_id: "602b290881140f0041932136",
+                      department: q,
+                      job: bB,
+                    },
+                    {
+                      adult: a,
+                      gender: i,
+                      id: 2478789,
+                      known_for_department: bH,
+                      name: bI,
+                      original_name: bI,
+                      popularity: f,
+                      profile_path: c,
+                      credit_id: "5f4fbe531d35630035ac2f5a",
+                      department: bH,
+                      job: "Visual Effects Supervisor",
+                    },
+                    {
+                      adult: a,
+                      gender: i,
+                      id: 2491419,
+                      known_for_department: D,
+                      name: bJ,
+                      original_name: bJ,
+                      popularity: f,
+                      profile_path: c,
+                      credit_id: "5f26c5d5869e7500385fe018",
+                      department: D,
+                      job: bg,
+                    },
+                    {
+                      adult: a,
+                      gender: i,
+                      id: 2662515,
+                      known_for_department: B,
+                      name: bL,
+                      original_name: bL,
+                      popularity: f,
+                      profile_path: c,
+                      credit_id: "601bba9c8a88b2003fb81379",
+                      department: B,
+                      job: "Digital Intermediate Producer",
+                    },
+                    {
+                      adult: a,
+                      gender: i,
+                      id: 2729123,
+                      known_for_department: B,
+                      name: bM,
+                      original_name: bM,
+                      popularity: f,
+                      profile_path: c,
+                      credit_id: "5f26c4a3efe37c0038bc280e",
+                      department: B,
+                      job: "Editor",
+                    },
+                    {
+                      adult: a,
+                      gender: i,
+                      id: 2872349,
+                      known_for_department: D,
+                      name: bN,
+                      original_name: bN,
+                      popularity: f,
+                      profile_path: c,
+                      credit_id: "6071c7f22f791500298628c3",
+                      department: D,
+                      job: "Props",
+                    },
+                    {
+                      adult: a,
+                      gender: d,
+                      id: 2969701,
+                      known_for_department: B,
+                      name: bO,
+                      original_name: bO,
+                      popularity: f,
+                      profile_path: c,
+                      credit_id: "602c1f448258fc003d9ec230",
+                      department: B,
+                      job: "Digital Intermediate",
+                    },
+                    {
+                      adult: a,
+                      gender: d,
+                      id: 2979615,
+                      known_for_department: bP,
+                      name: bQ,
+                      original_name: bQ,
+                      popularity: f,
+                      profile_path: c,
+                      credit_id: "602b24dbe72fe8003c1063ee",
+                      department: bP,
+                      job: "Lighting Director",
+                    },
+                  ],
+                },
+                images: {
+                  backdrops: [],
+                  posters: [
+                    {
+                      aspect_ratio: z,
+                      file_path: O,
+                      height: 2700,
+                      iso_639_1: b,
+                      vote_average: 5.384,
+                      vote_count: d,
+                      width: 1800,
+                    },
+                    {
+                      aspect_ratio: z,
+                      file_path: "\u002FkJWsl5Hy2Co9F3r9i8grmDoK3bh.jpg",
+                      height: bS,
+                      iso_639_1: b,
+                      vote_average: 5.252,
+                      vote_count: o,
+                      width: bT,
+                    },
+                    {
+                      aspect_ratio: z,
+                      file_path: "\u002FcDWJa81owlXPipppUlSio8e2YYF.jpg",
+                      height: 750,
+                      iso_639_1: b,
+                      vote_average: bU,
+                      vote_count: d,
+                      width: 500,
+                    },
+                    {
+                      aspect_ratio: z,
+                      file_path: "\u002Fdr1QDylRRNDEXJDRMpMQxI2nSDZ.jpg",
+                      height: 1440,
+                      iso_639_1: b,
+                      vote_average: bU,
+                      vote_count: d,
+                      width: 960,
+                    },
+                    {
+                      aspect_ratio: z,
+                      file_path: "\u002Fif8eqxOE3q1mgeSIHs3srQhvk9D.jpg",
+                      height: 2550,
+                      iso_639_1: b,
+                      vote_average: 5.19,
+                      vote_count: Z,
+                      width: 1700,
+                    },
+                    {
+                      aspect_ratio: z,
+                      file_path: "\u002FoyCQImKXzTgBWM9ridNnFBgTsCg.jpg",
+                      height: bS,
+                      iso_639_1: b,
+                      vote_average: 5.172,
+                      vote_count: p,
+                      width: bT,
+                    },
+                    {
+                      aspect_ratio: z,
+                      file_path: "\u002FjmbpPyRexURw1MGpmLi6boIObjg.jpg",
+                      height: 1287,
+                      iso_639_1: b,
+                      vote_average: 5.044,
+                      vote_count: aU,
+                      width: 858,
+                    },
+                    {
+                      aspect_ratio: 0.6741666666666667,
+                      file_path: "\u002FaIPTYP5sJbragZQ7cnjjjjm0k5x.jpg",
+                      height: 1200,
+                      iso_639_1: b,
+                      vote_average: i,
+                      vote_count: i,
+                      width: 809,
+                    },
+                  ],
+                },
+                external_ids: {
+                  imdb_id: aL,
+                  facebook_id: c,
+                  instagram_id: c,
+                  twitter_id: c,
+                },
+                release_dates: {
+                  results: [
+                    {
+                      iso_3166_1: "DE",
+                      release_dates: [
+                        {
+                          certification: k,
+                          iso_639_1: k,
+                          note: x,
+                          release_date: w,
+                          type: o,
+                        },
+                      ],
+                    },
+                    {
+                      iso_3166_1: E,
+                      release_dates: [
+                        {
+                          certification: aN,
+                          iso_639_1: k,
+                          note: x,
+                          release_date: w,
+                          type: o,
+                        },
+                      ],
+                    },
+                    {
+                      iso_3166_1: "FR",
+                      release_dates: [
+                        {
+                          certification: k,
+                          iso_639_1: k,
+                          note: x,
+                          release_date: w,
+                          type: o,
+                        },
+                      ],
+                    },
+                    {
+                      iso_3166_1: "PL",
+                      release_dates: [
+                        {
+                          certification: k,
+                          iso_639_1: k,
+                          note: x,
+                          release_date: w,
+                          type: o,
+                        },
+                      ],
+                    },
+                    {
+                      iso_3166_1: "BR",
+                      release_dates: [
+                        {
+                          certification: "16",
+                          iso_639_1: k,
+                          note: x,
+                          release_date: w,
+                          type: o,
+                        },
+                      ],
+                    },
+                    {
+                      iso_3166_1: W,
+                      release_dates: [
+                        {
+                          certification: aN,
+                          iso_639_1: k,
+                          note: x,
+                          release_date: w,
+                          type: o,
+                        },
+                      ],
+                    },
+                    {
+                      iso_3166_1: j,
+                      release_dates: [
+                        {
+                          certification: "NR",
+                          iso_639_1: k,
+                          note: x,
+                          release_date: w,
+                          type: o,
+                        },
+                      ],
+                    },
+                    {
+                      iso_3166_1: "PT",
+                      release_dates: [
+                        {
+                          certification: "M\u002F18",
+                          iso_639_1: k,
+                          note: x,
+                          release_date: w,
+                          type: o,
+                        },
+                      ],
+                    },
+                    {
+                      iso_3166_1: "IT",
+                      release_dates: [
+                        {
+                          certification: k,
+                          iso_639_1: c,
+                          note: "Venice International Film Festival",
+                          release_date: "2020-09-03T00:00:00.000Z",
+                          type: p,
+                        },
+                      ],
+                    },
+                  ],
+                },
+              },
+            },
+          ],
+          error: c,
+          state: { search: { searchOpen: a, fromPage: "\u002F" } },
+          serverRendered: true,
+        };
+      })(
+        false,
+        "en",
+        null,
+        2,
+        18,
+        0.6,
+        "tv",
+        "movie",
+        0,
+        "US",
+        "",
+        "Acting",
+        28,
+        10765,
+        4,
+        1,
+        "Costume & Make-Up",
+        14,
+        10759,
+        12,
+        16,
+        "Production",
+        "2021-04-09T00:00:00.000Z",
+        "Netflix",
+        35,
+        0.6666666666666666,
+        80,
+        "Editing",
+        "Park Hoon-jung",
+        "Art",
+        "KR",
+        8.3,
+        53,
+        10751,
+        9648,
+        "Directing",
+        "Sound",
+        878,
+        8.2,
+        "JP",
+        "\u002FdYCWUAidqgakGETwZkfGxU7CWhL.jpg",
+        8.6,
+        557736,
+        "ko",
+        "ja",
+        2.942,
+        "\u002FsIfrrVBKzaNE4K84NJ46GLggszn.jpg",
+        "Producer",
+        "GB",
+        7,
+        37,
+        5,
+        8.4,
+        8.1,
+        "Coming 2 America",
+        1000,
+        20000,
+        "Chaos Walking",
+        7.5,
+        "The Falcon and the Winter Soldier",
+        5.9,
+        "Wonder Woman 1984",
+        "Riverdale",
+        6.8,
+        "The Nevers",
+        "The Father",
+        "2021-04-09",
+        "WandaVision",
+        "The Walking Dead",
+        "Mortal Kombat",
+        "Invincible",
+        "2021-03-26",
+        8.9,
+        "THEM",
+        10,
+        "2021-04-07",
+        "The Irregulars",
+        29,
+        "Game of Thrones",
+        7.8,
+        8.7,
+        "Grey's Anatomy",
+        "Supergirl",
+        "Kung Fu",
+        "The Serpent",
+        "DOTA: Dragon's Blood",
+        "Made For Love",
+        9,
+        "Monster Hunter",
+        "Tom & Jerry",
+        "Soul",
+        "tt12792418",
+        "\u002FdEh93Ni98JWh7fmhD56ZlOFQmoT.jpg",
+        "18",
+        606523,
+        "Um Tae-goo",
+        "Jeon Yeo-been",
+        "Cha Seung-won",
+        "Raya and the Last Dragon",
+        "Lee Ki-young",
+        3,
+        "Park Ho-san",
+        "낙원의 밤",
+        "Hyun Bong-sik",
+        "Cho Dong-in",
+        6,
+        "Cha Soon-bae",
+        "A gangster tries to clean up his life to care for his sick sister and nephew. But someone targeting him accidentally kills them instead. In shock, he decides to take revenge.",
+        "Ahn Se-bin",
+        "Jang Young-nam",
+        "Lee Moon-sik",
+        "Son Byung-ho",
+        "Zack Snyder's Justice League",
+        "Jo Hwa-seong",
+        "Production Design",
+        "2020-09-03",
+        "Kim Woo-taek",
+        "Night in Paradise",
+        7.4,
+        27.028,
+        "Godzilla vs. Kong",
+        "Concrete Cowboy",
+        38,
+        "Thunder Force",
+        "Mowg",
+        "Camera",
+        "Kim Young-ho",
+        "Avengers: Endgame",
+        "Choi Se-yeon",
+        "Costume Design",
+        "Yoo Se-heui",
+        "Kim Hyun-woo",
+        "Shin Min-kyung",
+        "Kim Chang-sub",
+        "Kwak Tae-yong",
+        "Special Effects Makeup Artist",
+        "Kim Seo-hee",
+        "Crew",
+        "Hwang Jin-mo",
+        "Yeon Young-sik",
+        "Hwang Hyo-gyun",
+        "Visual Effects",
+        "Park Kyoung-soo",
+        "Choi Hyeon-seok",
+        "Nomadland",
+        "Ryu Yeon",
+        "Jang Lae-won",
+        "Oh Jin-seok",
+        "Kim Il-kwang",
+        "Lighting",
+        "Cho Yong-jun",
+        "Batman v Superman: Dawn of Justice",
+        2559,
+        1706,
+        5.246,
+        "The Croods: A New Age",
+        "Madame Claude",
+        "The Flash"
+      );
+    </script>
+    <script src="/_nuxt/7bd6ba750f166d4d4752.js" defer></script>
+    <script src="/_nuxt/374aec39be97b91b0f4e.js" defer></script>
+    <script src="/_nuxt/165fdd8a75ad53668bf5.js" defer></script>
+    <script src="/_nuxt/857b729cde3df87c5389.js" defer></script>
+    <script src="/_nuxt/0796b4f9a42a131d0b04.js" defer></script>
+  </body>
+</html>
