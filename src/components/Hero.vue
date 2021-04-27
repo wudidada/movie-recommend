@@ -23,7 +23,7 @@
         <div class="desc">
           {{ item.overview.trim() }}
         </div>
-        <button type="button" class="button button--icon trailer_3TaRf">
+        <!-- <button type="button" class="button button--icon trailer_3TaRf">
           <span class="icon"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +35,7 @@
               <path d="M3 22v-20l18 10-18 10z"></path></svg
           ></span>
           <span class="txt">Watch Trailer</span>
-        </button>
+        </button> -->
         <button
           type="button"
           class="button button--icon trailer_3TaRf"

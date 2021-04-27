@@ -2,14 +2,8 @@
   <div class="container">
     <img class="ops" src="../assets/images/404.svg" />
     <br />
-    <h3>
-      Halaman yang Anda cari tidak ditemukan. <br />
-      Bisa jadi karena url tersebut salah atau tidak tersedia.
-    </h3>
+    <h3></h3>
     <br />
-    <a class="buton" href="https://indrakusuma.web.id/"
-      >www.indrakusuma.web.id</a
-    >
   </div>
 </template>
 
@@ -20,13 +14,19 @@ export default {};
 <style scoped>
 body {
   background: #fff;
+  background-color: #000;
   padding: 0;
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
 }
 
 .container {
-  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
   margin: 0 auto;
   text-align: center;
   padding-top: 50px;

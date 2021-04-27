@@ -42,7 +42,7 @@ export default {
         })
         .catch(err => {
           if (err.response && err.response.status == 500) {
-            alert("no more data");
+            this.$router.push("/finished");
           }
         });
     }

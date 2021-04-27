@@ -18,7 +18,7 @@ export default new Router({
       component: Recommend,
     },
     {
-      path: "/404",
+      path: "/finished",
       component: NotFound,
     },
   ],
