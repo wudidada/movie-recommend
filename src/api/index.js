@@ -4,7 +4,7 @@ import axios from "axios";
  * API url
  */
 const apiUrl = "https://api.themoviedb.org/3";
-const myApi = "http://localhost:3000";
+const myApi = "http://82.157.174.30:3000";
 
 /**
  * Image url
