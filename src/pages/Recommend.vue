@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { getListItem, getRecommend } from "../api";
+import { getRecommend } from "../api";
 import Hero from "../components/Hero";
 import { mapState } from "vuex";
 
@@ -21,10 +21,6 @@ export default {
 
   computed: {
     ...mapState(["answers"]),
-    trendingTvTitle() {
-      return getListItem("tv", "trending").title;
-    },
-
     trendingTvUrl() {
       return { name: "tv-category-name", params: { name: "trending" } };
     }

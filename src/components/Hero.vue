@@ -9,15 +9,23 @@
         ]"
       >
         <h1 class="name">
-          <a :href="item.homepage">
-            {{ item.title }}
-          </a>
+          {{ item.title }}
         </h1>
         <div class="meta">
           <div class="info">
             <!---->
             <span>{{ releaseYear }}</span>
-            <span style="margin-left: 16px">评分:{{ item.vote_average }}</span>
+            <star-rating
+              :rating="item.vote_average / 2"
+              read-only
+              :star-size="14"
+              :show-rating="false"
+              :increment="0.5"
+              style="display: inline-block; margin-left: 12px"
+              :title="item.vote_average"
+            ></star-rating>
+            <span style="margin-left: 12px">{{ item.runtime }}分钟</span>
+            <span style="margin-left: 12px">{{ geners }}</span>
           </div>
         </div>
         <div class="desc">
@@ -36,9 +44,14 @@
           ></span>
           <span class="txt">Watch Trailer</span>
         </button> -->
+        <a :href="buttonLink" target="_blank">
+          <button type="button" class="button" @click="getData">
+            <span class="txt">{{ buttonText }}</span>
+          </button>
+        </a>
         <button
           type="button"
-          class="button button--icon trailer_3TaRf"
+          class="button"
           @click="getData"
           style="margin-left: 12px"
         >
@@ -64,6 +77,8 @@
 </template>
 
 <script>
+import StarRating from "vue-star-rating";
+
 export default {
   props: {
     item: {
@@ -73,9 +88,33 @@ export default {
     getData: Function,
     loaded: Boolean
   },
+  components: {
+    StarRating
+  },
+
   computed: {
+    buttonLink() {
+      if (this.item.homepage) {
+        return this.item.homepage;
+      } else {
+        return `https://www.imdb.com/title/${this.item.imdb_id}/`;
+      }
+    },
+    buttonText() {
+      if (this.item.homepage) {
+        return "官网";
+      } else {
+        return "IMDB";
+      }
+    },
+    geners() {
+      const gens = [];
+      for (const g of this.item.genres) {
+        gens.push(g.name);
+      }
+      return gens.join("/");
+    },
     releaseYear() {
-      console.log(this.item);
       return this.item.release_date.slice(0, 4);
     },
     type() {
