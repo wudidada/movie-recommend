@@ -5,7 +5,7 @@
         :class="[
           'content',
           { animate__animated: loaded },
-          { animate__fadeInUp: loaded },
+          { animate__fadeInUp: loaded }
         ]"
       >
         <h1 class="name">
@@ -55,7 +55,7 @@
           @click="getData"
           style="margin-left: 12px"
         >
-          <span class="txt">下一部</span>
+          <span class="txt">Next</span>
         </button>
       </div>
     </div>
@@ -67,7 +67,7 @@
             { animate__animated: loaded },
             { animate__fadeIn: loaded },
             { animate__slow: loaded },
-            'image',
+            'image'
           ]"
           :src="backdrop"
         />
@@ -102,7 +102,7 @@ export default {
     },
     buttonText() {
       if (this.item.homepage) {
-        return "官网";
+        return "Homepage";
       } else {
         return "IMDB";
       }
